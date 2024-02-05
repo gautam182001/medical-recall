@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Medical Recall</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body class="dashborad-page">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="row-wrap">
+          <div class="logo-wrap">
+            <a href="index.html" title="Medical Recall">
+              <img src="images/logo.svg" alt="Medical Recall" />
+            </a>
+          </div>
+          <div class="nav-wrap">
+            <div class="dashboard-nav-wrap">
+              <div class="custom-select custom-select-white">
+                <div class="select-styled">Clinical Labs</div>
+                <div class="custom-options">
+                  <div>Clinical Labs</div>
+                  <div>Clinical Labs1</div>
+                  <div>Clinical Labs2</div>
+                </div>
+              </div>
+              <div class="right-block">
+                <div class="free-trial-wrapper">
+                  <div class="free-trial-blog">
+                    <p>Free Trial: 90 Days Left Upgrade</p>
+                    <a href="#" title="Upgrade" class="link">Upgrade</a>
+                  </div>
+                </div>
+                <div class="information-blog">
+                  <a href="#" title="Information">
+                    <img src="images/information.svg" alt="information" />
+                  </a>
+                </div>
+                <div class="profile-menu">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <span>Caroline Harper</span>
+                      <i>Recall Essentials</i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="my-profile.html" title="Profile">
+                          <div class="img-wrap">
+                            <img src="images/profile.svg" alt="Profile" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>My Profile</h6>
+                            <p>Change passwords,Manage email address</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" title="Billing">
+                          <div class="img-wrap">
+                            <img src="images/billing.svg" alt="Billing" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Billing</h6>
+                            <p>Card details, Subscription plan</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" title="Manage Clinics">
+                          <div class="img-wrap">
+                            <img src="images/clinic.svg" alt="Clinic" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Manage Clinics</h6>
+                            <p>Manage your clinics</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" title="Refer a Colleague">
+                          <div class="img-wrap">
+                            <img src="images/colleague.svg" alt="colleague" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Refer a Colleague</h6>
+                            <p>Refer a colleague by an invite</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item logout" href="#" title="Log out" data-bs-toggle="modal"
+                          data-bs-target="#log-out">
+                          <div class="img-wrap">
+                            <img src="images/log-out.svg" alt="log-out" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Log out</h6>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-wrap">
+      <div class="dashboard-outer">
+        <div class="dashboard-detail">
+          <div class="currunt-month">
+            <h5>November</h5>
+            <p class="total-price">$1,340</p>
+          </div>
+          <div class="progress-outer">
+            <div class="admin-details">
+              <div class="admin-detail-inner">
+                <p><span>Face-Face Consults :</span> 75</p>
+              </div>
+              <div class="admin-detail-inner">
+                <p><span>Telehealth Consults :</span> 32</p>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-outer">
+          <div class="left-blog">
+            <div class="list-wrapper">
+              <a href="#" title="Add New Patient" class="add-Patient" data-bs-toggle="modal"
+                data-bs-target="#add-patient">
+                <i>
+                  <img src="images/add-patient.svg" alt="Add Patient" />
+                </i>
+                Add New Patient
+              </a>
+              <a href="#" title="Recalls" class="btn primary-btn">
+                <i>
+                  <img src="images/date.svg" alt="Date" />
+                </i>
+                Recalls - this week <span> (12)</span>
+              </a>
+              <a href="#" title="Future Recalls" class="btn white-btn">
+                <i>
+                  <img src="images/time-forward.svg" alt="Time Forward" />
+                </i>
+                Future Recalls <span> (26)</span>
+              </a>
+            </div>
+          </div>
+          <div class="right-blog">
+            <div class="filter-wrapper">
+              <a href="#" title="Print" class="print">
+                <i>
+                  <img src="images/printer.svg" alt="Printer" />
+                </i>
+                Print
+              </a>
+              <div class="filter-wrapper-inner">
+                <a href="#" title="Filter" class="filter">
+                  <i>
+                    <img src="images/filter.svg" alt="Filter" />
+                  </i>
+                  Filter
+                </a>
+                <div class="filter-blog">
+                  <div class="filter-title-wrapper">
+                    <h5>Filter</h5>
+                    <a href="#" title="Close" class="close">
+                      <img src="images/close.svg" alt="close" />
+                    </a>
+                  </div>
+                  <form>
+                    <div class="filter-body">
+                      <div class="row-wrap-outer">
+                        <div class="col">
+                          <label>Date of Recall</label>
+                        </div>
+                        <div class="col half-col">
+                          <div class="form-field">
+                            <input type="date">
+                          </div>
+                        </div>
+                        <div class="col half-col">
+                          <div class="form-field">
+                            <input type="date">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-field">
+                            <label>Reason to Recall</label>
+                            <select class="select">
+                              <option value="1">Select your Reason to Recall</option>
+                              <option value="2">Australia</option>
+                              <option value="3">United States</option>
+                              <option value="4">Canada</option>
+                              <option value="5">India</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <label>Status</label>
+                          <div class="radio-wrapper">
+                            <div class="radio">
+                              <input type="radio" id="test1" name="radio-group" checked>
+                              <label for="test1">Not Started</label>
+                            </div>
+                            <div class="radio">
+                              <input type="radio" id="test2" name="radio-group">
+                              <label for="test2">Working on it</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-footer">
+                      <a href="#" title="Reset All" class="btn small-btn outline-btn">Reset All</a>
+                      <a href="#" title="Apply Now" class="btn small-btn blue-btn">Apply Now</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="search-blog">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#search">
+                  <span>
+                    <img src="images/search.svg" alt="search">
+                  </span>
+                  Search Patient
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-outer">
+          <table id="dashboard-table" class="table dashboard-table" style="width:100%">
+            <thead>
+              <tr>
+                <th>Name <span></span> </th>
+                <th>Date of Birth <span></span> </th>
+                <th>Reason to recall <span></span> </th>
+                <th>Date of recall<span></span> </th>
+                <th>Status <span></span> </th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Albert Flores</td>
+                <td>16 July 1998</td>
+                <td>X-Ray</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Cody Fisher</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Esther Howard</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Leslie Alexander</td>
+                <td>16 July 1998</td>
+                <td>Blood Test</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Darrell Steward</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Jerome Bell</td>
+                <td>16 July 1998</td>
+                <td>Blood Test</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Leslie Alexander</td>
+                <td>16 July 1998</td>
+                <td>Blood Test</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Bessie Cooper</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Bessie Cooper</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Bessie Cooper</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Bessie Cooper</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Bessie Cooper</td>
+                <td>16 July 1998</td>
+                <td>Daily Checkup</td>
+                <td>16 Sept 2023</td>
+                <td>
+                  <div class="custom-select">
+                    <div class="select-styled">Not Started</div>
+                    <div class="custom-options">
+                      <div data-value="not-started" class="selected">Not Started</div>
+                      <div data-value="working-on">Working on it</div>
+                      <div data-value="completed">Completed</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <Button class="action">
+                      <i>
+                        <img src="images/union.svg" alt="Union" />
+                      </i>
+                    </Button>
+                    <div class="menu-option">
+                      <a href="#" title="Edit">Edit</a>
+                      <a href="#" title="Delete">Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- No Record start -->
+          <!-- Note:  No Record div visible body addclass "empty-data"-->
+          <div class="no-record" style="display: none;">
+            <div class="no-record-inner">
+              <div class="img-wrap">
+                <img src="images/no-data.png" alt="no-data">
+              </div>
+              <h3>No Patients Added</h3>
+              <p>Add your patients and start managing them</p>
+            </div>
+          </div>
+          <!-- No Record start -->
+
+          <div class="add-btn-wrapper">
+            <a href="#" title="Add New Patient" class="add-Patient" data-bs-toggle="modal"
+              data-bs-target="#add-patient">
+              <i>
+                <img src="images/add-patient.svg" alt="Add Patient" />
+              </i>
+              Add New Patient
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade  add-patient-block" id="add-patient" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-close">
+          <button data-bs-dismiss="modal" title="Close">
+            <img src="./images/close.svg" alt="close-btn">
+          </button>
+        </div>
+        <h4>Add New Patient</h4>
+        <form>
+          <div class="row-wrap-outer">
+            <div class="col ">
+              <div class="form-field">
+                <label>Name</label>
+                <input type="text" placeholder="Enter patient’s name">
+              </div>
+            </div>
+            <div class="col ">
+
+              <div class="form-field">
+                <label>Date of Birth</label>
+                <input type="date">
+              </div>
+            </div>
+            <div class="col ">
+
+              <div class="form-field">
+                <label>Reason to Recall</label>
+                <input type="email" placeholder="Enter their Reason to Recall">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-field select-field">
+                <label>Date of Recall</label>
+                <input type="text" placeholder="Enter when you want to be reminded again">
+                <div class="select-wrap">
+                  <select class="select">
+                    <option value="1">Days</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="5">4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-wrap bg-btn">
+            <a href="#" title="Add Patient" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#submit">
+              <span class="text">
+                Add Patient
+                <i class="right-arrow">
+                  <img src="images/right_arrow_white.svg" alt="Right" />
+                </i>
+              </span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade check-img log-out-block " id="log-out" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  sm-modal modal-dialog-centered">
+      <div class="modal-content">
+        <i class="checked-icon">
+          <img src="./images/log-out-icon.svg" alt="conform-img">
+        </i>
+        <h4>Logout</h4>
+        <h5>By logging out, you will be redirected to login screen. Do you wish to proceed ?</h5>
+        <div class="btn-wrap two-btn ">
+          <a href="#" title="Cancel" class="btn small-btn outline-btn" data-bs-dismiss="modal">Cancel</a>
+          <a href="login.html" title="Logout" class="btn small-btn blue-btn red-btn"> Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade check-img submit-block " id="welcome" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+      <div class="modal-content">
+        <div class="video-wrapper">
+          <div class="video-bg" style="background-image: url(images/video-img.jpg);">
+            <div class="waves-block">
+              <div class="waves wave-1"></div>
+              <div class="waves wave-2"></div>
+              <div class="waves wave-3"></div>
+              <a href="#" class="play-btn" title="Play Video">
+                <i class="play-icon">
+                  <img src="./images/play.svg" alt="play" />
+                </i>
+                <span class="play-txt">Play Video</span>
+              </a>
+            </div>
+          </div>
+          <div class="video-container">
+            <!-- <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+            <video controls autoplay muted>
+              <source src="./images/movie.mp4" type="video/mp4" />
+              <source src="./images/movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <h2>Welcome to Medical Recall </h2>
+        <p class="sub-title">Watch our 2 minute tutorial to become a Medical Recall Expert </p>
+        <div class="btn-wrap">
+          <a href="#" title="Let's Get Started" class="btn primary-btn clinics" data-ds-dismiss="modal">
+            <i class="left-arrow">
+              <img src="images/right_arrow_white.svg" alt="Right" />
+            </i>
+            <span class="text">
+              Let's Get Started
+              <i class="right-arrow">
+                <img src="images/right_arrow_white.svg" alt="Right" />
+              </i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade  clinic-block" id="clinic" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-close">
+          <button data-bs-dismiss="modal" title="Close">
+            <img src="./images/close.svg" alt="close-btn">
+          </button>
+        </div>
+        <h4>What clinics do your practice out of ?</h4>
+        <form>
+          <div class="row-wrap-outer">
+            <div class="col">
+              <div class="form-field">
+                <label>Clinic Name</label>
+                <input type="text" placeholder="Enter Clinic Name">
+              </div>
+            </div>
+            <div class="col">
+
+              <div class="form-field">
+                <label>Second Clinic</label>
+                <input type="text" placeholder="Enter Clinic Name">
+              </div>
+            </div>
+          </div>
+          <a href="#" title="+ Add More Clinic" class="red-text">+ Add More Clinic</a>
+          <div class="btn-wrap bg-btn">
+            <a href="#" title="Add Clinic" class="btn primary-btn" data-bs-dismiss="modal">
+              <span class="text">
+                Add Clinic
+                <i class="right-arrow">
+                  <img src="images/right_arrow_white.svg" alt="Right" />
+                </i>
+              </span>
+            </a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- search Modal -->
+  <div class="modal fade  search-modal" id="search" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-title-wrapper">
+          <h4>Search Patients</h4>
+          <div class="modal-close">
+            <button data-bs-dismiss="modal" title="Close">
+              <img src="./images/close.svg" alt="close-btn">
+            </button>
+          </div>
+        </div>
+        <div class="table-outer">
+          <div class="search-outer">
+            <span>
+              <img src="images/search.svg" alt="search">
+            </span>
+            <input type="text" id="globalSearch" placeholder="Search Patient">
+          </div>
+          <div class="table-inner">
+            <h5>Recalls - This Week <span>(4 Results Found)</span></h5>
+            <table id="table1" class="table dashboard-table" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Name <span></span></th>
+                  <th>Date of Birth <span></span></th>
+                  <th>Reason to recall <span></span></th>
+                  <th>Date of recall <span></span></th>
+                  <th>Status <span></span></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Albert Flores</td>
+                  <td>16 July 1998</td>
+                  <td>X-Ray</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cody Fisher</td>
+                  <td>16 July 1998</td>
+                  <td>Daily Checkup</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Esther Howard</td>
+                  <td>16 July 1998</td>
+                  <td>Daily Checkup</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-inner">
+            <h5>Future Recalls <span>(5 Results Found)</span></h5>
+            <table id="table2" class="table dashboard-table" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Name <span></span></th>
+                  <th>Date of Birth <span></span></th>
+                  <th>Reason to recall <span></span></th>
+                  <th>Date of recall <span></span></th>
+                  <th>Status <span></span></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Leslie Alexander</td>
+                  <td>16 July 1998</td>
+                  <td>Blood Test</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Darrell Steward</td>
+                  <td>16 July 1998</td>
+                  <td>Daily Checkup</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Jerome Bell</td>
+                  <td>16 July 1998</td>
+                  <td>Blood Test</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Leslie Alexander</td>
+                  <td>16 July 1998</td>
+                  <td>Blood Test</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bessie Cooper</td>
+                  <td>16 July 1998</td>
+                  <td>Daily Checkup</td>
+                  <td>16 Sept 2023</td>
+                  <td>
+                    <div class="custom-select">
+                      <div class="select-styled">Not Started</div>
+                      <div class="custom-options">
+                        <div data-value="not-started" class="selected">Not Started</div>
+                        <div data-value="working-on">Working on it</div>
+                        <div data-value="completed">Completed</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="action-wrapper">
+                      <Button class="action">
+                        <i>
+                          <img src="images/union.svg" alt="Union" />
+                        </i>
+                      </Button>
+                      <div class="menu-option">
+                        <a href="#" title="Edit">Edit</a>
+                        <a href="#" title="Delete">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-message" style="display: none;">
+    <div class="toast-content">
+      <i><img src="./images/toast-icon.svg" alt="toast-icon"> </i>
+      <p>Thanks for verifying your email</p>
+    </div>
+    <div class="close-icon">
+      <a title="Close">
+        <img src="./images/toast-close.svg" alt="toast-close-icon">
+      </a>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

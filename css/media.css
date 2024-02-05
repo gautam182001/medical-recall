@@ -1,0 +1,425 @@
+
+@media(max-width:1440px){
+  .authentication-page .img-block{left:0;}
+}
+@media (max-width:1366px) {
+  .filter-outer .right-blog{flex: 0 0 22%;max-width: 22%;}
+}
+@media (max-width:1280px) {
+  .footer .upper-footer .contact-wrap { max-width: none; flex: 1 }
+  .footer .upper-footer .list-wrap { max-width: none; flex: 1 }
+  .footer .upper-footer .logo-wrap { max-width: none; flex: 1 }
+  .filter-wrapper .print,
+  .filter-wrapper .filter {font-size: 18px;margin-right: 10px;}
+  .dataTables_wrapper .dataTables_filter input{padding: 10px 10px 10px 40px;}
+  .add-Patient{font-size: 16px;padding: 10px 15px;}
+  .filter-outer .list-wrapper a:not(:last-child) {margin-right: 12px;}
+  .filter-outer .list-wrapper .btn{padding: 8px 15px;font-size: 16px;} 
+  .filter-wrapper .filter-blog {right: 10px;}
+  .box{padding: 18px 20px 25px;}
+  .box h4, .billing-table-outer h4 {font-size: 20px;line-height: 28px;}
+  .clinic-wrapper .clinic-inner .clinic-content h4,
+  .clinic-wrapper .clinic-inner .clinic-profile span{font-size: 22px;}
+  .authentication-page .img-block{left:-8%;}
+}
+  
+@media (max-width:1199px) {
+  h1 { font-size: 55px }
+  h2 { font-size: 32px }
+  h3 { font-size: 28px }
+  h4 { font-size: 26px }
+  h5 { font-size: 18px }
+  h6 { font-size: 16px }
+  .banner-section .content-wrap .sub-title { font-size: 26px }
+  .achievement-wrapper h2 { max-width: 400px; line-height: 40px; }
+  .achievement-wrapper .achievement-li { padding: 25px 35px; }
+  .achievement-wrapper .achievement-no { font-size: 38px; line-height: 42px; }
+  .achievement-wrapper .achievement-name { font-size: 20px; line-height: 24px; }
+  .play-btn { padding: 12px 20px; font-size: 18px; line-height: 22px; }
+  
+  .slick-prev { left: -20px; }
+  .slick-next { right: -20px; }
+  .footer .upper-footer .contact-wrap a { font-size: 20px }
+  .waves { width: 378px; height: 192px; }
+  .inner-banner-section{padding: 155px 0 100px;} 
+  .payment-inner-wrapper{margin: 0 -15px;}
+  .payment-inner-wrapper .payment-detail,
+  .payment-inner-wrapper .payment-summary{padding: 0 15px;}
+  .admin-detail {padding: 6px 6px 6px 12px;}
+  .filter-outer .left-blog{flex: 0 0 100%;max-width: 100%;margin: 0 0 24px;}
+  .filter-outer .right-blog{flex: 0 0 100%;max-width: 100%;}
+  .filter-wrapper{justify-content: flex-start;}
+  .filter-outer{margin: 0 -15px 25px;}
+  .filter-wrapper .filter-blog{left: 0;}
+  .profile-info h4 {margin: 0 0 20px;}
+  .profile-info .form-field {margin-bottom: 25px;}
+  .email-edit-blog .title-wrapper {margin: 0 0 18px;}
+  .email-edit-blog .email-list li{font-size: 16px;line-height: 18px;padding: 13px 20px;}
+  .plan-blog p{font-size: 16px;}
+  .card-detail li{padding: 15px 0;}
+  .card-detail .card-wrapper .card-img{max-width: 50px;min-width: 50px;margin-right: 10px;}
+  .card-wrapper .card-content .card-number{font-size: 14px;line-height: 16px;}
+  .card-wrapper .card-content .card-holder-name{font-size: 14px;line-height: 20px;}
+  .clinic-wrapper .clinic-inner .clinic-profile{width: 54px;min-width: 54px;height: 54px;margin-right: 15px;}
+  .dashboard-detail .currunt-month .total-price {font-size: 22px;line-height: 24px;} 
+  .dashboard-detail .currunt-month{flex: 0 0 150px;max-width: 150px;margin-right: 20px;}
+}
+  
+@media (max-width:1024px) {
+  h1 { font-size: 46px }
+  h2 { font-size: 28px }
+  h3 { font-size: 24px }
+  h4 { font-size: 22px }
+  .achievement-wrapper h2 { max-width: 340px; line-height: 34px; }
+  .achievement-wrapper .achievement-no { font-size: 30px; line-height: 34px; }
+  .achievement-wrapper .achievement-li { padding: 15px 20px; }
+  .achievement-wrapper p { font-size: 18px; }
+  .achievement-wrapper .achievement-name { font-size: 18px; line-height: 22px; }
+  .pricing-section .choose-plan-block{padding: 20px 20px 35px;}
+  .pricing-section .right-block ul li {padding-left: 20px;}
+  .upgrade-plan-page .pricing-section .left-block ul li {padding-left: 20px;}
+  .admin-detail p{font-size: 15px;}
+  .medical-recall-section .feature-item .feature-list-content { padding: 25px 15px; }
+
+
+  .authentication-page .main-wrap{display:flex;align-items:center;justify-content:center;}
+  .authentication-page .img-block{display:none;}
+  .authentication-page .authentication-wrapper{margin:0 auto;}
+  .authentication-secion{padding:120px 0 50px 0;}
+  .authentication-page .heading-block p{font-size:20px!important;}
+
+}
+  
+@media (max-width:992px) { 
+  .btn { font-size: 16px; min-height: 44px }
+  .btn.small-btn { font-size: 14px }
+  .header { padding: 15px 0 }
+  .header .nav-list li { padding: 0 10px }
+  .banner-section { padding: 90px 0 200px }
+  .banner-section .content-wrap .sub-title { font-size: 22px }
+  .banner-section .content-wrap .sub-title-lines,
+  .inner-banner-section .content-wrap .sub-title-lines { font-size: 16px }
+  .dashboard-section .dashboard-img-wrap { margin-top: -200px }    
+  .contract-section .contract-wrapper { padding: 25px 42px 30px; }
+  .contract-wrapper .content-block p { font-size: 18px; }
+  .achievement-wrapper { padding: 50px 0; margin:0; }
+  .achievement-wrapper .achievement-img { bottom: -56px; }
+  .how-works-wrapper { padding: 70px 0; }
+  .medical-recall-section { padding: 50px 0; }
+  .review-section { padding: 50px 0; }
+  .medical-recall-section .feature-list .feature-item { flex: 0 0 50%; max-width: 50%; }
+  .inner-banner-section {padding: 120px 0 80px;}
+  .pricing-section {padding: 70px 0;}
+  .upgrade-plan-page .pricing-section{padding-top: 150px;}
+  .upgrade-plan-page .bg-img {height: 566px;} 
+  .payment-inner {padding: 20px 15px;}
+  .plan-wrapper{padding: 15px 10px 15px}
+  .plan-wrapper .plan-list p{font-size: 14px;}
+  .payment-summary h5{font-size: 20px;}
+  .payment-summary table tr td{font-size: 16px;}
+  .payment-summary table tr td:last-child,
+  .payment-summary table tr.grand-totals td{font-size: 18px;}
+  .payment-summary table tr.grand-totals td:last-child{font-size: 22px;}
+  .payment-outer{padding: 120px 0 100px;}
+  .admin-detail-outer .admin-detail-list{flex: 0 0 50%;max-width: 50%;}
+  th.dtfc-fixed-left{border-right: 1px solid rgb(185, 203, 213) !important;}
+  td.dtfc-fixed-left{border-right: 1px solid var(--light-gray8) !important;}
+  .tab-outer .tab-content>.tab-pane {display: block;opacity: 1;}
+  .accordion .accordion-collapse {margin: 0 0 25px;}
+  .accordion .accordion-button:not(.collapsed)::after{background-image: var(--bs-accordion-btn-icon);}
+  .tab-content-wrapper .tab-content-left,
+  .tab-content-wrapper .tab-content-right{flex: 0 0 100%;max-width: 100%;}
+  .tab-content-wrapper .tab-content-left,
+  .tab-content-right .box:not(:last-child) {margin: 0 0 25px;}
+  .clinic-outer .btn-outer{position: static;margin: 0 0 20px;text-align: right;}
+  .card-wrapper .card-content .card-number{font-size: 16px;line-height: 18px;}
+  .card-wrapper .card-content .card-holder-name {font-size: 16px;line-height: 22px;}
+  .clinic-wrapper .clinic-list{padding: 15px 20px;}
+  .clinic-wrapper .clinic-inner .clinic-profile{width: 50px;min-width: 50px;height: 50px;}
+  .clinic-wrapper .clinic-inner .clinic-content h4, .clinic-wrapper .clinic-inner .clinic-profile span{font-size: 20px;}
+  .refer-blog .btn{min-width: 200px;}
+  .dashborad-page .header .logo-wrap{margin-right: 10px;max-width: 130px;}
+  .dashborad-page .header .right-block{gap: 15px;}
+  .custom-select-white.custom-select .select-styled{font-size: 14px;line-height: 22px;height: 36px;min-width: 130px;padding: 6px 35px 6px 12px;}
+  .profile-menu .dropdown-toggle {padding-right: 8px;}
+  .profile-menu .dropdown-toggle span{font-size: 14px;line-height: 14px;}
+  .information-blog a{max-width: 22px;min-width: 22px;}
+  .free-trial-blog{padding: 8px 10px;}
+  .free-trial-blog p{font-size: 12px;}
+  .free-trial-blog .link{font-size: 10px;}
+
+  .faq-list-wrap .faq-content{min-height:auto;}
+  .faq-list-wrap .faq-content .questions{margin-bottom:15px;}
+  .faq-section .faq-list-wrap{margin:0  -10px;}
+  .faq-list-wrap .faq-content{padding:15px;}
+  .faq-section .faq-list-wrap .faq{padding:0 10px;}
+  .faq-section .section-heading{margin-bottom:40px;}
+
+  .modal a.btn{font-size:16px;}
+  .modal .profile-pera{font-size:16px;}
+
+  .page-not-found-page .main-wrap{padding-top:73px;}
+  .cms-page .inner-banner-section{padding: 120px 0 55px;}
+
+  .trial-block a{font-size:16px;}
+  .trial-block.modal .modal-close{top:10px;right:10px;}
+  .trial-block .modal-logo img{max-height:45px;}
+  .payment-block .checked-icon img{height:80px;width:80px;}
+  .dashboard-detail .currunt-month{flex: 0 0 100px;max-width: 100px;margin-right: 15px;}
+}
+  
+@media (max-width:767px) {
+  h1 { font-size: 36px }
+  h3 { font-size: 26px; }
+  h4 { font-size: 20px; }
+  .header { background-color: var(--dark-blue) }
+  .header .hamburger { display: block }
+  .header .logo-wrap { max-width: 120px }
+  .header .nav-wrap { position: fixed; top: 0; bottom: 0; right: 0; left: 0; background-color: var(--dark-blue); transition: all .3s linear; width: 100%;  z-index: 0; opacity: 0; visibility: hidden; }
+  .header .nav-wrap.is-open { z-index: 9 ;opacity: 1; visibility: visible;}
+  .header .nav-list { transition-delay: 0.3s; transition-duration: 1s; transition-property: all; flex-direction: column; align-items: unset; height: 100%; overflow-y: auto; opacity: 0; visibility: hidden; }
+  .header .nav-wrap.is-open .nav-list {opacity: 1; visibility: visible;}
+  .header .nav-list ul { flex-direction: column; align-items: unset }
+  .header .nav-list li { padding: 10px 25px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .header .nav-list li:first-child {border-top: 1px solid rgba(255, 255, 255, 0.1);}
+  .header .nav-list li a { text-align: left; display: inline-block; padding: 2px 0 }
+  .header .nav-list .btn-wrap { padding: 20px 25px; }
+  .footer .upper-footer .contact-wrap a { font-size: 18px }
+  .footer .upper-footer{margin: 0 -15px;}
+  .footer .upper-footer .logo-wrap { max-width: 100%; flex: 0 0 100%; margin: 0 0 20px;padding: 0 15px; }
+  .footer .upper-footer .list-wrap{padding: 0 15px;}
+  .footer .upper-footer .contact-wrap {padding: 0 15px;}
+  .footer .lower-footer { padding: 20px 0 }
+  .footer .lower-footer .right-wrap ul { margin: 0 -10px }
+  .footer .lower-footer .right-wrap ul li { padding: 0 10px }
+  .dashboard-section .dashboard-img-wrap { margin-top: -150px }
+  .banner-section { padding: 80px 0 150px }
+  .banner-section .content-wrap .sub-title { font-size: 18px }
+  .banner-section .gray-pill { font-size: 14px }
+  .contract-wrapper .content-block p { font-size: 16px; }
+  .contract-section .contract-wrapper {  flex-direction: column; }
+  .contract-section .contract-wrapper .content-block { text-align: center; margin: 0 0 15px; }
+  .achievement-wrapper { background-size: 970px; background-position:  center right; }
+  .achievement-wrapper .achievement-about { border-radius: 18px; }
+  .achievement-wrapper .achievement-row { padding-bottom: 170px; }
+  .achievement-wrapper .achievement-row .left-col { flex: 0 0 100%; max-width: 100%; padding: 0; margin-bottom: 30px; text-align: center; }
+  .achievement-wrapper .achievement-row .right-col { flex: 0 0 100%; max-width: 100%; margin-top: 0; margin-bottom: 20px; }
+  .achievement-wrapper h2 { margin: 0 auto 10px; }
+  .achievement-wrapper .achievement-li { padding: 15px; }
+  .achievement-wrapper .achievement-no { font-size: 26px; line-height: 30px; }
+  .achievement-wrapper .achievement-name { font-size: 16px; line-height: 20px; }
+  .achievement-wrapper p { font-size: 16px; }
+  .achievement-wrapper .achievement-img { max-width: 416px; width: 100%; left: 0; right: 0; margin: 0 auto; }
+  .video-wrapper { border-radius: 18px; }
+  .video-wrapper .video-container { padding-bottom: 50%; }
+  .play-btn { padding: 12px 14px; font-size: 16px; line-height: 20px; }
+  .play-btn .play-icon { margin-right: 8px; width: 25px; height: 25px; }
+  .how-works-wrapper { padding: 50px 0; }
+  .section-heading { margin-bottom: 25px; text-align: center; }
+  .section-heading h2 { margin-bottom: 5px; }
+  .section-heading .sub-title { font-size: 16px; }
+  .review-section .review-content { padding: 25px; }
+  .waves { width: 358px; height: 172px; }
+  .inner-banner-section {padding: 100px 0 60px;}
+  .pricing-section{padding: 50px 0;}
+  .pricing-section .pricing-wrapper .left-block, 
+  .pricing-section .pricing-wrapper .right-block {flex: 0 0 100%;max-width: 100%;}
+  .pricing-section .price-title-block{max-width: 100%;padding: 0;margin: 0 0 30px;}
+  .pricing-section .price-title-block h2{margin: 0 0 15px;}
+  .pricing-section .pricing-wrapper .left-block ul {display: none;}
+  .pricing-section .price-title-block .price-desc p{font-size: 16px;}
+  .pricing-section .price-title-block p,
+  .pricing-section .price-title-block a{font-size: 18px;}
+  .pricing-section ul li {font-size: 16px;line-height: 20px;flex-wrap: wrap;}
+  .pricing-section .right-block ul li:before{padding-right: 10px;content: attr(data-title) ': '; display: inline-block;color: var(--dark-gray1);font-weight: 500;}
+  .pricing-section .choose-plan-block {padding: 20px 15px 30px;} 
+  .contract-section {padding: 35px 0 0;} 
+  .upgrade-plan-page .pricing-section {padding-top: 90px;}
+  .upgrade-plan-page .bg-img {height: 475px;}
+  .payment-inner-wrapper .payment-detail {margin: 0 0 25px;}
+  .payment-inner-wrapper .payment-detail, .payment-inner-wrapper .payment-summary {flex: 0 0 100%;max-width: 100%;}
+  .payment-outer {padding: 100px 0 70px;}
+  .payment-inner .payment-detail-inner h5 {margin: 0 0 20px;}
+  .payment-detail-inner .form-field{margin: 0 0 25px;}
+  .row-wrap-outer .col.half-col{flex: 0 0 100%;max-width: 100%;}
+  label,
+  input {font-size: 16px;}
+  .payment-detail-inner input{padding: 14px 0;}
+  .add-Patient {display: none;}
+  .dashboard-outer{padding: 20px 15px;}
+  .add-btn-wrapper {display: block;position: absolute;left: 0;right: 0;text-align: center;bottom: -10px;z-index: 1;}
+  .add-btn-wrapper .add-Patient{display: inline-flex;}
+  .dashborad-page .header .container{padding: 0 15px;}
+  .back a{font-size: 18px;padding-left: 25px;}
+  .back a span{max-width: 20px;}
+  .accordion .accordion-item .accordion-button{font-size: 16px;padding: 15px;}
+  .box {padding: 15px 15px 20px;}
+  .box h4, .billing-table-outer h4 {font-size: 20px;line-height: 22px;}
+  label,
+  .phone-change span {font-size: 16px;}
+  input{font-size: 16px;padding: 14px 0;}
+  .profile-info input {padding: 14px 0;}
+  .select2-container--default .select2-selection--single{font-size: 16px;padding: 10px 0;}
+  .profile-info .form-field {margin-bottom: 20px;}
+  .email-edit-blog .email-list li:not(:last-child) {margin: 0 0 10px;}
+  .link{font-size: 14px;}
+  .plan-blog .btn-wrapper{margin-top: 15px;}
+  .authentication-blog .switch{margin-top: 0;}
+  .plan-blog p {font-size: 14px;line-height: 18px;margin: 0 0 7px;}
+  .clinic-outer .btn-outer .btn{font-size: 16px;}
+  .refer-blog p{font-size: 14px;line-height: 18px;}
+  .dashborad-page .main-wrap{padding-top: 76px;}
+  .dashborad-page .header .dashboard-nav-wrap {overflow-y: auto;height: 100%;display: flex;flex-direction: column;justify-content: flex-start;}
+  .dashborad-page .header .right-block {display: block;}
+  .dashborad-page .header .right-block > div:first-child{border-top: 1px solid rgba(255, 255, 255, 0.1);}
+  .dashborad-page .header .right-block > div {border-bottom: 1px solid rgba(255, 255, 255, 0.1);padding: 15px;width: 100%;}
+  .free-trial-blog p {font-size: 14px;}
+  .free-trial-blog .link {font-size: 12px;}
+  .dashborad-page .custom-select-white {padding: 15px;order: 1;width: 100%;}
+  .profile-menu .dropdown-menu{position: static !important;max-width: 100%;min-width: 100%;margin-top: 10px !important;}
+  .dashborad-page .custom-select-white .custom-options{position: static;margin-top: 7px;}
+  .profile-menu .dropdown-toggle{display: block;}
+
+  .authentication-page .authentication-wrapper{max-width:100%;padding:30px;}
+  .authentication-page .heading-block{margin-bottom:15px;}
+  .authentication-page input{padding:10px 0;}
+  .authentication-page .forgot-password-block .custom-checkbox{height:20px;width:20px;}
+  .authentication-page .forgot-password-block .form-field input{height:20px;width:20px;}
+  .btn-wrap.bg-btn{margin-bottom:15px;}
+  .authentication-page .footer-content p{text-align:center;}
+
+  .btn-wrap.two-btn .btn{padding:9px;}
+  .cancel-plan-block .btn-wrap{flex-wrap:wrap;}
+  .cancel-plan-block .btn-wrap .btn{margin-bottom:15px;}
+  .btn-wrap.two-btn .btn:not(:last-child){margin-right:15px;}
+
+  .faq-section .faq-list-wrap .faq{flex:0 0 50%;max-width:50%;}
+  .faq-section{padding:40px 0;}
+  .faq-section .section-heading{margin-bottom:50px;}
+
+  .modal .modal-logo img{max-height:45px;margin-bottom:20px;}
+  .modal .btn.small-btn{font-size:16px;}
+  .modal form{margin-top:0;}
+  .modal-content{padding:30px;}
+  .modal .modal-close{top:10px;right:15px;}
+  .modal .modal-close img{height: 15px;width: 15px;}
+  .modal .sub-title{font-size:22px;}
+  .modal .call{font-size:22px;}
+
+
+  .checked-icon{margin-bottom:15px;}
+  .checked-icon img{height:50px;width:50px;}  
+  .information-blog {display: none;}
+  .sidebar-open .logo-wrap{z-index: 11;}
+  .profile-menu .dropdown-toggle:after{top: 17px;} 
+  .dashboard-detail{margin: 0 0 20px;}
+  .dashboard-detail .currunt-month h5{margin: 0 0 5px;}
+  .dashboard-detail .currunt-month .total-price{font-size: 20px;}
+  .dashboard-detail .admin-details .admin-detail-inner p {font-size: 16px;line-height: 22px;}
+  .dashboard-detail .admin-details .admin-detail-inner p span{font-size: 14px;}
+  .search-modal .modal-content{padding: 15px 15px;}
+  .search-modal .modal-title-wrapper h4{font-size: 22px;}
+  .search-outer span{top: 11px;}
+  .search-modal .search-outer input{height: 40px;}
+  .search-outer{margin: 0 0 20px;}
+  .table-inner h5{margin: 0 0 10px;}
+  .filter-wrapper .print, .filter-wrapper .filter {font-size: 16px;margin-right: 8px;}
+  .filter-wrapper .print i, .filter-wrapper .filter i{margin-right: 8px;min-width: 18px;max-width: 18px;}
+  .search-blog button{width: 100%;min-width: 1px;padding:10px 12px 11px;}
+  .search-blog span{margin-right: 8px;}
+
+  .modal .row-wrap-outer .col{margin-bottom: 20px;}
+  .trial-block.modal .modal-close{height: 25px; width: 25px;}
+  .modal.submit-block{padding-right: 0 !important;}
+  .dashborad-page.modal-open{padding-right: 0 !important;}
+
+  .cms-page p{font-size: 14px;}
+.cms-page li{font-size: 14px}
+}
+  
+@media (max-width:575px) {
+  h3 { font-size: 24px; }
+  .dashboard-section .dashboard-img-wrap { margin-top: -100px }
+  .banner-section { padding: 100px 0 }
+  .play-btn { padding: 12px; }
+  .play-btn .play-icon { margin-right: 0; }
+  .play-btn .play-txt { display: none; }
+  .footer .upper-footer .contact-wrap { max-width: 100%; flex: 0 0 100% } 
+  .footer .upper-footer .list-wrap { max-width: 100%; flex: 0 0 100%; margin: 0 0 20px }
+  .footer .upper-footer .list-wrap ul li:not(:last-child) { margin: 0 0 10px }
+  .footer .upper-footer .list-wrap ul a { font-size: 14px }
+  .footer .upper-footer .contact-wrap a { font-size: 16px }
+  .footer .upper-footer h5 { margin: 0 0 15px }
+  .footer .lower-footer { justify-content: center; text-align: center; flex-direction: column-reverse; }
+  .footer .lower-footer .left-wrap { margin: 10px 0 0; }
+  .footer .lower-footer .copyright { margin: 0; font-size: 14px }
+  .footer .lower-footer .right-wrap ul li{display: inline-flex;align-items: center; position: relative;}
+  .footer .lower-footer .right-wrap ul li a { font-size: 14px }
+  .footer .lower-footer .right-wrap ul li:not(:first-child):before{content: ""; background-color: var(--dark-gray3);width: 4px; height: 4px; border-radius: 50%;display: block;position:absolute;left: -2px;}
+  .footer .upper-footer{text-align: center;}
+  .footer .upper-footer .logo-wrap img{margin: 0 auto;}
+  .medical-recall-section { padding: 40px 0; }
+  .review-section { padding: 40px 0; }
+  .medical-recall-section .feature-list .feature-item { flex: 0 0 100%; max-width: 100%; padding: 0; }
+  .medical-recall-section .feature-list { margin: 0 0 -24px; }
+  .medical-recall-section .feature-list-content img { height: 45px; width: 45px; margin: 0 auto 15px; }
+  .slick-arrow.slick-prev { left: -12px; }
+  .slick-arrow.slick-next { right: -12px; }
+  .review-list .review-block { padding: 0 30px; }
+  .waves { width: 115px; height: 115px; } 
+  .plan-wrapper .plan-list{flex: 0 0 100%;max-width: 100%;}
+  .plan-wrapper .plan-list:not(:last-child){margin: 0 0 15px;}
+  .payment-outer {padding: 100px 0 50px;}
+  .payment-detail-inner .form-field .img-wrapper{max-width: 65px;bottom: 20px;}
+  .filter-wrapper .filter-blog {position: fixed;top: 0;right: 0;left: 0;bottom: 0;width: 100%;max-width: 100%;z-index: 1111;border-radius: 0;overflow-y: auto;box-shadow: none;border: 0;min-width: 1px;}
+
+  .authentication-page .forgot-password-block{flex-direction:column;align-items:start;}
+  .authentication-page .forgot-password-block  .radio-wrap{margin-bottom: 10px;}
+  .authentication-page .forgot-password-block .form-field{margin-bottom:15px;}
+  .authentication-page .authentication-wrapper{padding:20px;}
+  .authentication-page .heading-block p{font-size:18px!important;}
+
+  .cancel-subscription-block .btn-wrap{flex-wrap:wrap;}
+  .cancel-subscription-block .btn-wrap .btn{margin-bottom:15px;}
+  .payment-block .payment-table table{font-size:17px;}
+  .payment-block .payment-table{padding:20px 10px;}
+  .payment-block .payment-table table tfoot{font-size:20px;}
+  .payment-block .checked-icon img{height:55px;width:55px;}
+  .payment-block.modal .sub-title{font-size:19px;}
+
+  .modal-content{padding:30px 15px;}
+  .modal .form-field{margin-bottom:15px;}
+  .modal .call{font-size:20px;}
+  .modal .sub-title{font-size:20px;}
+  .modal .bg-text{font-size:18px;}
+
+  .faq-section .faq-list-wrap .faq{flex:0 0 100%;max-width:100%;}
+  .faq-section .bg-text{font-size:18px;margin-bottom:20px;}
+  .dashboard-detail{padding: 10px 15px 15px;}
+  .dashboard-detail .currunt-month{flex: 0 0 100%;max-width: 100%;border-right: 0;border-bottom: 1px solid var(--light-gray3);padding-bottom: 10px;margin: 0 0 10px;}
+  .toast-message{ min-width: 295px;padding: 10px 15px;}
+  .toast-message .toast-content p{white-space: nowrap;}
+  .modal .row-wrap-outer .col{margin-bottom: 15px;}
+}
+@media (max-width:480px) {
+  .admin-detail-outer .admin-detail-list{flex: 0 0 100%;max-width: 100%;margin: 0 0 15px;}
+  .filter-outer .list-wrapper{flex-direction: column;gap: 15px;}
+  .filter-outer .list-wrapper a:not(:last-child){margin: 0;}
+  .filter-outer{margin: 0 -15px 20px;}
+  .dataTables_wrapper .dataTables_filter{position: static;margin: 20px 0;}
+  .plan-blog .btn-wrapper .btn:not(:last-child){margin: 0 0 10px;}
+  .plan-blog .btn-wrapper .btn{font-size: 16px;width: 100%;}
+  .clinic-wrapper .clinic-inner .clinic-content{flex-wrap: wrap;}
+  .clinic-wrapper .label-primary{margin-left: 0;font-size: 12px;}
+  .clinic-wrapper .clinic-list{padding: 12px 15px;}
+  .clinic-wrapper .clinic-inner .clinic-profile{margin-right: 10px;}
+  .clinic-wrapper .clinic-inner .clinic-content h4, .clinic-wrapper .clinic-inner .clinic-profile span{font-size: 18px;}
+  .clinic-wrapper .clinic-inner .clinic-content h4{width: 100%;}
+}
+
+@media (max-width:374px) {
+  .container { padding: 0 15px }
+  .achievement-wrapper .achievement-no { font-size: 22px; line-height: 26px; margin-bottom: 2px; }
+  .faq-section .bg-text{font-size:17px;}
+}
+  

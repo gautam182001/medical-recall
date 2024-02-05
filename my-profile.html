@@ -1,0 +1,914 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Medical Recall</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body class="dashborad-page">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="row-wrap">
+          <div class="logo-wrap">
+            <a href="index.html" title="Medical Recall">
+              <img src="images/logo.svg" alt="Medical Recall" />
+            </a>
+          </div>
+          <div class="nav-wrap">
+            <div class="dashboard-nav-wrap">
+              <div class="custom-select custom-select-white" id="custom-select">
+                <div class="select-styled">Clinical Labs</div>
+                <div class="custom-options">
+                  <div>Clinical Labs</div>
+                  <div>Clinical Labs1</div>
+                  <div>Clinical Labs2</div>
+                </div>
+              </div>
+              <div class="right-block">
+                <div class="free-trial-wrapper">
+                  <div class="free-trial-blog">
+                    <p>Free Trial: 90 Days Left Upgrade</p>
+                    <a href="#" title="Upgrade" class="link">Upgrade</a>
+                  </div>
+                </div>
+                <div class="information-blog">
+                  <a href="#" title="Information">
+                    <img src="images/information.svg" alt="information" />
+                  </a>
+                </div>
+                <div class="profile-menu">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <span>Caroline Harper</span>
+                      <i>Recall Essentials</i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="my-profile.html" title="Profile">
+                          <div class="img-wrap">
+                            <img src="images/profile.svg" alt="Profile" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>My Profile</h6>
+                            <p>Change passwords,Manage email address</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" title="Billing">
+                          <div class="img-wrap">
+                            <img src="images/billing.svg" alt="Billing" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Billing</h6>
+                            <p>Card details, Subscription plan</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" title="Manage Clinics">
+                          <div class="img-wrap">
+                            <img src="images/clinic.svg" alt="Clinic" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Manage Clinics</h6>
+                            <p>Manage your clinics</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" title="Refer a Colleague">
+                          <div class="img-wrap">
+                            <img src="images/colleague.svg" alt="colleague" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Refer a Colleague</h6>
+                            <p>Refer a colleague by an invite</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item logout" href="#" title="Log out" data-bs-toggle="modal"
+                          data-bs-target="#log-out">
+                          <div class="img-wrap">
+                            <img src="images/log-out.svg" alt="log-out" />
+                          </div>
+                          <div class="menu-content">
+                            <h6>Log out</h6>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-wrap">
+      <div class="dashboard-outer">
+        <div class="back">
+          <a href="#" title="Manage Account">
+            <span>
+              <img src="images/arrow-left.svg" alt="Arrow Left" />
+            </span>
+            Manage Account
+          </a>
+        </div>
+        <div class="tab-outer">
+          <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+                aria-selected="true">
+                <span>
+                  <img src="images/profile.svg" alt="Profile" />
+                  <img class="active" src="images/profile-white.svg" alt="Profile White" />
+                </span>
+                My Profile
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+                aria-selected="false">
+                <span>
+                  <img src="images/billing.svg" alt="Billing" />
+                  <img class="active" src="images/billing-white.svg" alt="Billing White" />
+                </span>
+                Billing
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
+                aria-selected="false">
+                <span>
+                  <img src="images/clinic.svg" alt="Clinic" />
+                  <img class="active" src="images/clinic-white.svg" alt="Clinic White" />
+                </span>
+                Manage Clinics
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab1" data-bs-toggle="tab" data-bs-target="#tab4" type="button"
+                aria-selected="false">
+                <span>
+                  <img src="images/colleague.svg" alt="colleague" />
+                  <img class="active" src="images/colleague-white.svg" alt="Colleague White" />
+                </span>
+                Refer a Colleague
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content accordion" id="myTabContent">
+            <!-- tab 1 Start -->
+            <div class="tab-pane fade show active accordion-item" id="tab1" tabindex="0">
+              <h2 class="accordion-header d-lg-none">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true">
+                  My Profile
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show d-lg-block" data-bs-parent="#myTabContent">
+                <div class="tab-content-wrapper">
+                  <div class="tab-content-left">
+                    <div class="box">
+                      <div class="profile-info">
+                        <h4>Profile Information</h4>
+                        <form>
+                          <div class="row-wrap-outer">
+                            <div class="col half-col">
+                              <div class="form-field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name">
+                              </div>
+                            </div>
+                            <div class="col half-col">
+                              <div class="form-field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name">
+                              </div>
+                            </div>
+                            <div class="col half-col">
+                              <div class="form-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter Your Email">
+                              </div>
+                            </div>
+                            <div class="col half-col">
+                              <div class="form-field">
+                                <label>Phone Number</label>
+                                <div class="tel-wrap">
+                                  <select class="select">
+                                    <option value="1">+ 61</option>
+                                    <option value="2">+ 91</option>
+                                    <option value="3">+ 1</option>
+                                    <option value="4">+ 111</option>
+                                  </select>
+                                  <input type="text" placeholder="Enter Your Phone Number">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col half-col">
+                              <div class="form-field">
+                                <label>Country</label>
+                                <select class="select">
+                                  <option value="1">USA</option>
+                                  <option value="2">Australia</option>
+                                  <option value="3">United States</option>
+                                  <option value="4">Canada</option>
+                                  <option value="5">India</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col half-col">
+                              <div class="form-field">
+                                <label>State</label>
+                                <select class="select">
+                                  <option value="1">California</option>
+                                  <option value="2">Australia</option>
+                                  <option value="3">United States</option>
+                                  <option value="4">Canada</option>
+                                  <option value="5">India</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col half-col">
+                              <div class="form-field">
+                                <label>Speciality</label>
+                                <input type="text" placeholder="Speciality">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <a title="Edit Profile" class="btn blue-outline-btn">
+                                Edit Profile
+                              </a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content-right">
+                    <div class="box">
+                      <div class="email-edit-blog">
+                        <div class="title-wrapper">
+                          <h4>Each weeks recall list is emailed to :</h4>
+                          <a href="#" title="Edit" class="link" data-bs-toggle="modal"
+                            data-bs-target="#address">Edit</a>
+                        </div>
+                        <ul class="email-list">
+                          <li>carolineharper12@gmail.com</li>
+                          <li>stellina@gmail.com</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="authentication-blog">
+                        <div class="title-wrapper">
+                          <h4>2 Factor Authentication</h4>
+                          <div class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                          </div>
+                        </div>
+                        <div class="phone-change">
+                          <span>+1 89089 83490</span>
+                          <a href="#" title="Change" class="link">Change</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <h4><a href="#" title="Change Password" data-bs-toggle="modal" data-bs-target="#password"> Change
+                          Password</a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab 1 End -->
+
+            <!-- tab 2 start -->
+            <div class="tab-pane fade accordion-item" id="tab2" tabindex="0">
+              <h2 class="accordion-header d-lg-none">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                  aria-expanded="false">
+                  Billing
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse d-lg-block" data-bs-parent="#myTabContent">
+                <div class="tab-content-wrapper">
+                  <div class="tab-content-left">
+                    <div class="box">
+                      <div class="plan-blog">
+                        <h4>Recall Essentials</h4>
+                        <p>Next payment of <span>A$ 19.90</span> (monthly) occurs on <span>Oct 10, 2023</span></p>
+                        <p>You can modify and upgrade your account subscription at any time you want.</p>
+                        <div class="btn-wrapper">
+                          <a href="#" title="Change Plan" class="btn small-btn outline-btn" data-bs-toggle="modal" data-bs-target="#cancel-subscription">Change Plan</a>
+                          <a href="#" title="Cancel Plan" class="btn small-btn red-outline-btn" data-bs-toggle="modal"
+                            data-bs-target="#cancel-plan">Cancel Plan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="billing-table-outer">
+                      <div class="filter-outer">
+                        <div class="left-blog">
+                          <h4>Billing History</h4>
+                        </div>
+                        <div class="right-blog">
+                          <div class="filter-wrapper">
+                            <div class="filter-wrapper-inner">
+                              <a href="#" title="Filter" class="filter">
+                                <i>
+                                  <img src="images/filter.svg" alt="Filter" />
+                                </i>
+                                Filter
+                              </a>
+                              <div class="filter-blog">
+                                <div class="filter-title-wrapper">
+                                  <h5>Filter</h5>
+                                  <a href="#" title="Close" class="close">
+                                    <img src="images/close.svg" alt="close" />
+                                  </a>
+                                </div>
+                                <form>
+                                  <div class="filter-body">
+                                    <div class="row-wrap-outer">
+                                      <div class="col">
+                                        <label>Date of Recall</label>
+                                      </div>
+                                      <div class="col half-col">
+                                        <div class="form-field">
+                                          <input type="date">
+                                        </div>
+                                      </div>
+                                      <div class="col half-col">
+                                        <div class="form-field">
+                                          <input type="date">
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="form-field">
+                                          <label>Reason to Recall</label>
+                                          <select class="select">
+                                            <option value="1">Select your Reason to Recall</option>
+                                            <option value="2">Australia</option>
+                                            <option value="3">United States</option>
+                                            <option value="4">Canada</option>
+                                            <option value="5">India</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <label>Status</label>
+                                        <div class="radio-wrapper">
+                                          <div class="radio">
+                                            <input type="radio" id="test1" name="radio-group" checked>
+                                            <label for="test1">Not Started</label>
+                                          </div>
+                                          <div class="radio">
+                                            <input type="radio" id="test2" name="radio-group">
+                                            <label for="test2">Working on it</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="filter-footer">
+                                    <a href="#" title="Reset All" class="btn small-btn outline-btn">Reset All</a>
+                                    <a href="#" title="Apply Now" class="btn small-btn blue-btn">Apply Now</a>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="search-blog"> 
+                              <span>
+                                <img src="images/search.svg" alt="search">
+                              </span>
+                              <input type="text" id="globalSearch" placeholder="Search"> 
+                            </div>
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="table-outer">
+                        <table id="example" class="table billing-table" style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Amount</th>
+                              <th>Subscription</th>
+                              <th>Billing Period</th>
+                              <th>Status</th>
+                              <th>Receipt</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01 Nov 2023</td>
+                              <td>A$ 19.90 </td>
+                              <td>Recall Essentials</td>
+                              <td>Monthly</td>
+                              <td><span class="cancelled">cancelled</span></td>
+                              <td>
+                                <a href="#" title="Download" class="download-btn">
+                                  <span>
+                                    <img src="images/download.svg" alt="Download" />
+                                  </span>
+                                  Download
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>01 Nov 2023</td>
+                              <td>A$ 19.90 </td>
+                              <td>Recall Essentials</td>
+                              <td>Weekly</td>
+                              <td><span class="paid">paid</span></td>
+                              <td>
+                                <a href="#" title="Download" class="download-btn">
+                                  <span>
+                                    <img src="images/download.svg" alt="Download" />
+                                  </span>
+                                  Download
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>01 Nov 2023</td>
+                              <td>A$ 19.90 </td>
+                              <td>Recall Essentials</td>
+                              <td>Yearly</td>
+                              <td><span class="paid">paid</span></td>
+                              <td>
+                                <a href="#" title="Download" class="download-btn">
+                                  <span>
+                                    <img src="images/download.svg" alt="Download" />
+                                  </span>
+                                  Download
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content-right">
+                    <div class="box">
+                      <div class="card-blog">
+                        <div class="title-wrapper">
+                          <h4>Saved Cards</h4>
+                          <a href="#" title="+ADD NEW" class="link" data-bs-toggle="modal" data-bs-target="#new-card">+ADD
+                            NEW</a>
+                        </div>
+                        <ul class="card-detail">
+                          <li>
+                            <div class="card-wrapper">
+                              <div class="card-img">
+                                <img src="images/visa.svg" alt="Visa" />
+                              </div>
+                              <div class="card-content">
+                                <p class="card-number">**** **** 1157 <span class="label-primary">Primary</span></p>
+                                <p class="card-holder-name">Caroline Harper</p>
+                              </div>
+                            </div>
+                            <div class="action-wrapper">
+                              <Button class="action">
+                                <i>
+                                  <img src="images/union.svg" alt="Union" />
+                                </i>
+                              </Button>
+                              <div class="menu-option">
+                                <a href="#" title="Set Primary">Set Primary</a>
+                                <a href="#" title="Delete">Delete</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="card-wrapper">
+                              <div class="card-img">
+                                <img src="images/master.svg" alt="Master" />
+                              </div>
+                              <div class="card-content">
+                                <p class="card-number">**** **** 8564</p>
+                                <p class="card-holder-name">Jenny Harper</p>
+                              </div>
+                            </div>
+                            <div class="action-wrapper">
+                              <Button  class="action">
+                                <i>
+                                  <img src="images/union.svg" alt="Union" />
+                                </i>
+                              </Button>
+                              <div class="menu-option">
+                                <a href="#" title="Set Primary">Set Primary</a>
+                                <a href="#" title="Delete">Delete</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="card-wrapper">
+                              <div class="card-img">
+                                <img src="images/americanx.svg" alt="Americanx" />
+                              </div>
+                              <div class="card-content">
+                                <p class="card-number">**** **** 2347</p>
+                                <p class="card-holder-name">Caroline Harper</p>
+                              </div>
+                            </div>
+                            <div class="action-wrapper">
+                              <Button class="action">
+                                <i>
+                                  <img src="images/union.svg" alt="Union" />
+                                </i>
+                              </Button>
+                              <div class="menu-option">
+                                <a href="#" title="Set Primary">Set Primary</a>
+                                <a href="#" title="Delete">Delete</a>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab 2 End -->
+
+            <!-- tab 3 Start -->
+            <div class="tab-pane fade accordion-item" id="tab3" tabindex="0">
+              <h2 class="accordion-header d-lg-none">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                  aria-expanded="false">
+                  Manage Clinics
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse d-lg-block" data-bs-parent="#myTabContent">
+                <div class="tab-content-wrapper">
+                  <div class="tab-content-full">
+                    <div class="clinic-outer">
+                      <div class="btn-outer">
+                        <a href="#" title="Add New Clinic" class="btn small-btn red-outline-btn">+ Add New Clinic</a>
+                      </div>
+                      <div class="clinic-wrapper">
+                        <div class="clinic-list">
+                          <div class="clinic-inner">
+                            <div class="clinic-profile">
+                              <span>CL</span>
+                            </div>
+                            <div class="clinic-content">
+                              <h4>Clinical Labs</h4>
+                              <span class="label-primary">Default</span>
+                            </div>
+                          </div>
+                          <div class="action-wrapper">
+                            <Button  class="action">
+                              <i>
+                                <img src="images/union.svg" alt="Union" />
+                              </i>
+                            </Button>
+                            <div class="menu-option">
+                              <a href="#" title="Edit">Edit</a>
+                              <a href="#" title="Delete">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clinic-list">
+                          <div class="clinic-inner">
+                            <div class="clinic-profile">
+                              <span>AL</span>
+                            </div>
+                            <div class="clinic-content">
+                              <h4>Apollo Labs</h4>
+                            </div>
+                          </div>
+                          <div class="action-wrapper">
+                            <Button  class="action">
+                              <i>
+                                <img src="images/union.svg" alt="Union" />
+                              </i>
+                            </Button>
+                            <div class="menu-option">
+                              <a href="#" title="Edit">Edit</a>
+                              <a href="#" title="Delete">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab 3 End -->
+
+            <!-- tab 4 Start -->
+            <div class="tab-pane fade accordion-item" id="tab4" tabindex="0">
+              <h2 class="accordion-header d-lg-none">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                  aria-expanded="false">
+                  Refer a Colleague
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse d-lg-block" data-bs-parent="#myTabContent">
+                <div class="tab-content-wrapper">
+                  <div class="tab-content-full">
+                    <div class="box">
+                      <div class="refer-blog">
+                        <h4>Refer a Doctor</h4>
+                        <p>Get a free month of Medical Recall when they start their free-trial</p>
+                        <form>
+                          <div class="row-wrap-outer">
+                            <div class="col">
+                              <div class="form-field">
+                                <label>Email ID</label>
+                                <input type="email" placeholder="Enter Email ID">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <button class="btn primary-btn hover-arrow">
+                                <span class="text">
+                                  Send Invitation
+                                </span>
+                                <i class="right-arrow">
+                                  <img src="images/right_arrow_white.svg" alt="Right">
+                                </i>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab 4 End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade address " id="address" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-close">
+          <button data-bs-dismiss="modal" title="Close">
+            <img src="./images/close.svg" alt="close-btn">
+          </button>
+        </div>
+        <h4>Each weeks recall list is emailed to :</h4>
+        <form>
+          <div class="row-wrap-outer">
+            <div class="col">
+              <div class="form-field">
+                <label>Add New Email ID</label>
+                <input type="text" placeholder="Enter Email ID">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-field">
+                <label>Current Email Address</label>
+                <div class="chips-wrap">
+                  <span class="chips">
+                    johndoe@gmail.com
+                    <i><img src="./images/red-close-icon.svg" alt="red-close-icon"> </i>
+                  </span>
+                  <span class="chips">
+                    patrickcolb@gmail.com
+                    <i><img src="./images/red-close-icon.svg" alt="red-close-icon"> </i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap bg-btn">
+            <a href="#" title="Save Changes" class="btn primary-btn"  data-bs-dismiss="modal">
+
+              <span class="text">
+                Save Changes
+                <i class="right-arrow">
+                  <img src="images/right_arrow_white.svg" alt="Right" />
+                </i>
+              </span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="password" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-close">
+          <button data-bs-dismiss="modal" title="Close">
+            <img src="./images/close.svg" alt="close-btn">
+          </button>
+        </div>
+        <h4>Change Password</h4>
+        <form>
+          <div class="row-wrap-outer">
+            <div class="col">
+              <div class="form-field">
+                <label>Current Password</label>
+                <div class="password-block">
+                  <input type="password" placeholder="Enter Current Password" class="input-control">
+                  <i class="view-pwd">
+                    <img src="./images/hide-show-icon.svg" alt="hide-show-icon" class="show-pwd">
+                    <img src="./images/hide-icon.svg" alt="hide-icon" class="hide-pwd">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-field">
+                <label>New Password </label>
+                <div class="password-block">
+                  <input type="password" placeholder="Enter New Password" class="input-control">
+                  <i class="view-pwd">
+                    <img src="./images/hide-show-icon.svg" alt="hide-show-icon" class="show-pwd">
+                    <img src="./images/hide-icon.svg" alt="hide-icon" class="hide-pwd">
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-field">
+                <label>Confirm New Password</label>
+                <div class="password-block">
+                  <input type="password" placeholder="Confirm New Password" class="input-control">
+                  <i class="view-pwd">
+                    <img src="./images/hide-show-icon.svg" alt="hide-show-icon" class="show-pwd">
+                    <img src="./images/hide-icon.svg" alt="hide-icon" class="hide-pwd">
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-wrap bg-btn">
+            <a href="#" title="Update Password" class="btn primary-btn"  data-bs-dismiss="modal">
+
+              <span class="text">
+                Update Password
+                <i class="right-arrow">
+                  <img src="images/right_arrow_white.svg" alt="Right" />
+                </i>
+              </span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade contact-us-block" id="new-card" tabindex="-1" 
+    aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-close">
+          <button data-bs-dismiss="modal" title="Close">
+            <img src="./images/close.svg" alt="close-btn">
+          </button>
+        </div>
+        <h4>Add New Card</h4>
+
+        <form>
+          <div class="row-wrap-outer">
+            <div class="col">
+              <div class="form-field">
+                <label>Card Number</label>
+                <input type="text" placeholder="Enter Your Card Number">
+              </div>
+            </div>
+            <div class="col half-col">
+
+              <div class="form-field">
+                <label>Expiration</label>
+                <input type="date">
+              </div>
+
+            </div>
+            <div class="col half-col">
+              <div class="form-field">
+                <label>CVC</label>
+                <input type="text" placeholder="CVC">
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap bg-btn">
+            <a href="#" title="Add Card" class="btn primary-btn"  data-bs-dismiss="modal">
+              <span class="text">
+                Add Card
+                <i class="right-arrow">
+                  <img src="images/right_arrow_white.svg" alt="Right" />
+                </i>
+              </span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade check-img cancel-plan-block" id="cancel-plan" tabindex="-1" 
+    aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+      <div class="modal-content">
+
+        <i class="modal-logo">
+          <img src="./images/modal-logo.svg" alt="modal-logo">
+        </i>
+        <h4>Are you getting the most out of
+          Medical Recall? </h4>
+        <h5>Watch the tutorial below</h5>
+        <div class="video-wrapper">
+          <div class="video-bg" style="background-image: url(images/video-img.jpg);">
+            <div class="waves-block">
+              <div class="waves wave-1"></div>
+              <div class="waves wave-2"></div>
+              <div class="waves wave-3"></div>
+              <a href="#" class="play-btn" title="Play Video">
+                <i class="play-icon">
+                  <img src="./images/play.svg" alt="play" />
+                </i>
+                <span class="play-txt">Play Video</span>
+              </a>
+            </div>
+          </div>
+          <div class="video-container">
+            <!-- <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+            <video controls autoplay muted>
+              <source src="./images/movie.mp4" type="video/mp4" />
+              <source src="./images/movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="btn-wrap two-btn">
+          <a href="#" title="I don't need to recall my patients" class="btn small-btn outline-btn" data-bs-toggle="modal"
+            data-bs-target="#cancel-subscription">I don't need to
+            recall my patients</a>
+          <a href="#" title="I can now improve my recall use" class="btn small-btn blue-btn" data-bs-dismiss="modal">I
+            can now improve my recall
+            use</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade check-img cancel-subscription-block" id="cancel-subscription" tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog  sm-modal modal-dialog-centered">
+      <div class="modal-content">
+
+        <i class="modal-logo">
+          <img src="./images/modal-logo.svg" alt="modal-logo">
+        </i>
+        <p class="profile-pera">Medical Recall is increasing your average 
+          billings by <span class="green-text"> $100x</span> every month</p>
+        <h4>Cancel Subscription </h4>
+
+        <h5>You currently have 10 days left on your subscription for no additional charges. </h5>
+        <h5>If you would like to proceed with cancelling your subscription, please select “Cancel Subscription”
+          below.</h5>
+        <div class="btn-wrap two-btn">
+          <a href="#" title="Maintain my investment into Medical Recall" class="btn small-btn outline-btn" data-bs-dismiss="modal">Maintain my investment into Medical Recall</a>
+          <a href="#" title="Cancel Subscription" class="btn small-btn blue-btn red-btn" data-bs-dismiss="modal">Cancel Subscription</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade check-img log-out-block " id="log-out" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  sm-modal modal-dialog-centered">
+      <div class="modal-content">
+        <i class="checked-icon">
+          <img src="./images/log-out-icon.svg" alt="conform-img">
+        </i>
+        <h4>Logout</h4>
+        <h5>By logging out, you will be redirected to login screen. Do you wish to proceed?</h5>
+        <div class="btn-wrap two-btn ">
+          <a href="#" class="btn small-btn outline-btn" title="Cancel" data-bs-dismiss="modal">Cancel</a>
+          <a href="login.html" title="Logout" class="btn small-btn blue-btn red-btn"> Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

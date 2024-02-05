@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Medical Recall</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row-wrap">
+            <div class="logo-wrap">
+              <a href="index.html" title="Medical Recall">
+                <img src="images/logo.svg" alt="Medical Recall" />
+              </a>
+            </div>
+            <div class="right-block">
+              <div class="btn-wrap">
+                <a href="#" class="btn small-btn light-btn simple-btn" title="Cancel" data-bs-dismiss="modal"> 
+                  <span class="text">
+                    Cancel
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-wrap">
+        <section class="payment-outer" style="background-image: url('./images/login-bg.png');">
+          <div class="container">
+            <div class="section-heading">
+              <h2>Payment Details</h2>
+              <p class="sub-title">
+                Complete your payment for the selected plan
+              </p>
+            </div>
+            <form>
+              <div class="payment-inner-wrapper">
+                <div class="payment-detail">
+                  <div class="payment-inner">
+                    <h5>Your Plan :</h5>
+                    <div class="plan-wrapper">
+                      <div class="plan-list">
+                        <h6>Plan</h6>
+                        <p>Recall Essentials</p>
+                      </div>
+                      <div class="plan-list">
+                        <h6>Billing</h6>
+                        <select class="select">
+                          <option>Annually</option>
+                          <option>Mounthly</option> 
+                          <option>Quarterly</option> 
+                        </select>
+                      </div>
+                      <div class="plan-list">
+                        <h6>Start Date</h6>
+                        <p>4 Oct 2023</p>
+                      </div>
+                    </div>
+                    <div class="payment-detail-inner">
+                      <h5>Payment Details</h5>
+                      <div class="row-wrap-outer">
+                        <div class="col">
+                          <div class="form-field">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="Enter Your Card Number"> 
+                            <span class="img-wrapper">
+                              <img src="./images/card-img.png" alt="card-img">
+                            </span>
+                          </div>
+                        </div> 
+                        <div class="col half-col">
+                          <div class="form-field">
+                            <label>Expiration</label>
+                            <input type="text" placeholder="MM/YY">  
+                          </div>
+                        </div>
+                        <div class="col half-col">
+                          <div class="form-field">
+                            <label>CVC</label>
+                            <input type="password" placeholder="CVC"> 
+                             <span class="img-wrapper">
+                              <img src="./images/cvc-img.png" alt="cvc-img">
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-field">
+                            <label>Country</label>
+                            <select class="select">
+                              <option>Australia</option>
+                              <option>United States</option>
+                              <option>Canada</option>
+                              <option>India</option>
+                            </select>
+                          </div>
+                        </div> 
+                      </div>
+                      <p>By providing your card information, you allow Business to charge your card for future payments in accordance with their terms.</p>
+                    </div> 
+                  </div>
+                </div>
+                <div class="payment-summary">
+                  <div class="payment-inner">
+                    <h5>Payment Summary</h5>
+                    <table>  
+                      <tbody>
+                        <tr>
+                          <td>Sub Total</td>
+                          <td>A$ 270</td>
+                        </tr>
+                        <tr>
+                          <td>Estimated Tax 10% (for GST) </td>
+                          <td>A$ 4.8</td>
+                        </tr>
+                        <tr> 
+                          <td colspan="2"><span class="divider"></span></td>
+                        </tr>
+                        <tr class="grand-totals">
+                          <td>Total Amount</td>
+                          <td>A$ 274.8</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a href="#" title="Pay Now" class="btn primary-btn btn-shadow hover-arrow" data-bs-toggle="modal" data-bs-target="#payment">
+                      <span class="text">
+                        Pay Now
+                      </span>
+                      <i class="right-arrow">
+                        <img src="images/right_arrow_white.svg" alt="Right">
+                      </i>
+                    </a>
+                    <p>By clicking “Pay Now”, you agree to the <a href="terms-conditions.html" title="Terms & Conditions">Terms & Conditions</a> and <a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a></p>
+                    <p>You’ll be charged <span>A$ 274.8</span> annually until you cancel the subscription.To learn more refer <a href="faq.html" title="FAQ" class="faq-link">FAQ</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section> 
+      </div>
+    </div> 
+    <div class="modal fade check-img payment-block" id="payment" tabindex="-1" 
+    aria-hidden="true">
+    <div class="modal-dialog  mid-modal modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-close">
+                <button data-bs-dismiss="modal" title="Close">
+                    <img src="./images/close.svg" alt="close-btn">
+                </button>
+            </div>
+            <i class="checked-icon">
+                <img src="./images/green-check-mark.svg" alt="authentication-icon">
+            </i>
+            <h2>Payment Successful</h2>
+            <p class="sub-title">Congratulations! Your payment has been successfully completed </p>
+            <div class="payment-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="odd"> Transaction ID</td>
+                            <td class="even"> #1034579909</td>
+                        </tr>
+                        <tr>
+                            <td class="odd"> Date</td>
+                            <td class="even"> 4 Oct, 2023</td>
+                        </tr>
+                        <tr>
+                            <td class="odd"> Payment Method</td>
+                            <td class="even"> Visa Credit Card</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="odd"> Total Amount</td>
+                            <td class="even"> A$ 274.8</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="btn-wrap two-btn">
+                <a href="#" title="Download" class="btn small-btn outline-btn" data-bs-dismiss="modal"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M1 13V14C1 14.7956 1.31607 15.5587 1.87868 16.1213C2.44129 16.6839 3.20435 17 4 17H14C14.7956 17 15.5587 16.6839 16.1213 16.1213C16.6839 15.5587 17 14.7956 17 14V13M13 9L9 13M9 13L5 9M9 13V1" stroke="#3C91E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> Download</a>
+                <a href="dashboard.html" title="Go To Dashboard" class="btn small-btn blue-btn" data-bs-dismiss="modal">Go To Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
