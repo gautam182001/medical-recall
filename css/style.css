@@ -2292,8 +2292,19 @@ a.red-text:hover {
 .filter-outer .list-wrapper .btn.white-btn {
   border-color: var(--dark-gray8);
   color: var(--black1);
+  line-height: 1;
 }
-
+.filter-outer .list-wrapper .btn.active-btn.white-btn {
+  border-color: var(--primary-color);
+  color: var(--white);
+  background-color: var(--primary-color) ;
+}
+.filter-outer .list-wrapper .btn.active-btn svg path{
+  fill:#ffffff;
+}
+.filter-outer .list-wrapper .btn.active-btn svg path{
+  stroke:#ffffff;
+}
 .filter-wrapper {
   display: flex;
   align-items: center;
@@ -2355,7 +2366,9 @@ a.red-text:hover {
 .dataTables_wrapper {
   overflow-y: auto;
 }
-
+.dashboards-table .dataTables_wrapper {
+  overflow-y: visible;
+}
 .dataTables_wrapper .dataTables_filter {
   position: absolute;
   right: 0;
@@ -2529,7 +2542,13 @@ table.dataTable tbody tr {
   opacity: 0;
   transition: 0.3s opacity;
 }
-
+table.dataTable tbody tr:last-child .action-wrapper .menu-option,table.dataTable tbody tr:nth-last-child(2) .action-wrapper .menu-option {
+ 
+  top: -290%;
+}
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody{
+	overflow: visible !important;
+  }
 .action-wrapper .menu-option.show {
   display: block;
   opacity: 1;
@@ -2620,7 +2639,10 @@ table.dataTable>thead>tr>th:last-child:before {
   top: 46px;
   z-index: 1;
 }
-
+table.dataTable tbody tr:last-child .custom-options,table.dataTable tbody tr:nth-last-child(2) .custom-options {
+top: auto;
+bottom: 46px;
+}
 .custom-options div {
   padding: 8px 29px;
   cursor: pointer;

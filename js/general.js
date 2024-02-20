@@ -240,6 +240,7 @@ $(document).ready(function () {
   //Data Table End
 
   // table select start
+  
   $(".select-styled").on("click", function () {
     $(this).closest(".custom-select").find(".custom-options").toggle();
   });
@@ -267,6 +268,35 @@ $(document).ready(function () {
       $(".custom-options").hide();
     }
   });
+  $(".paginate_button").on("click",function(){
+    $(".select-styled").on("click", function () {
+      $(this).closest(".custom-select").find(".custom-options").toggle();
+    });
+  
+    $(".custom-options div").on("click", function () {
+      var selectedValue = $(this).attr("data-value");
+      $(this)
+        .closest(".custom-options")
+        .find("div.selected")
+        .removeClass("selected");
+      $(this).addClass("selected");
+      $(this)
+        .closest("tr")
+        .removeClass("not-started working-on completed")
+        .addClass(selectedValue);
+      $(this)
+        .closest(".custom-select")
+        .find(".select-styled")
+        .text($(this).text());
+      $(".custom-options").hide();
+    });
+  
+    $(document).on("click", function (event) {
+      if (!$(event.target).closest(".custom-select").length) {
+        $(".custom-options").hide();
+      }
+    });
+  })
 
   // table select End
 
