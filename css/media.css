@@ -336,6 +336,15 @@
   .cms-page p{font-size: 14px;}
 .cms-page li{font-size: 14px}
 }
+@media (max-width:640px) {
+  .table-inner .dataTables_filter label::after{
+
+  }
+  .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter{
+    /* float: left; */
+    text-align: end;
+  }
+}
   
 @media (max-width:575px) {
   h3 { font-size: 24px; }

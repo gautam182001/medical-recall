@@ -73,6 +73,9 @@ function dataTable() {
     fixedColumns: {
       left: 1,
     },
+    language: {
+      searchPlaceholder: 'Search records'
+  }
   });
 
   $(".billing-table-outer .dataTables_filter label").append("<span></span>");
