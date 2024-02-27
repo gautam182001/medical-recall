@@ -1547,8 +1547,8 @@ a.red-text:hover {
 
 .footer .upper-footer .logo-wrap {
   padding: 0 20px;
-  max-width: 28%;
-  flex: 0 0 28%
+  max-width: 32%;
+  flex: 0 0 32%
 }
 
 .footer .upper-footer .logo-wrap img {
@@ -1561,8 +1561,8 @@ a.red-text:hover {
 
 .footer .upper-footer .list-wrap {
   padding: 0 20px;
-  max-width: 22%;
-  flex: 0 0 22%
+  max-width: 32%;
+  flex: 0 0 32%
 }
 
 .footer .upper-footer .list-wrap ul li:not(:last-child) {
@@ -1582,8 +1582,8 @@ a.red-text:hover {
 
 .footer .upper-footer .contact-wrap {
   padding: 0 20px;
-  max-width: 32%;
-  flex: 0 0 32%
+  max-width: 36%;
+  flex: 0 0 36%
 }
 
 .footer .upper-footer .contact-wrap li:not(:last-child) {
@@ -2397,6 +2397,8 @@ a.red-text:hover {
 .dataTables_wrapper .dataTables_info,
 .dataTables_scrollHead table.dataTable {
   border-spacing: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .dataTables_length {
@@ -4428,6 +4430,7 @@ bottom: 46px;
 }
 .dataTables_wrapper.no-footer .dataTables_filter label{
   color: transparent ;
+  user-select: none;
 
 }
 .dataTables_wrapper.no-footer .dataTables_filter label input{
@@ -4458,4 +4461,10 @@ bottom: 10px;
 }
 input[type="search"]::-webkit-search-cancel-button {
   display: none;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
 }

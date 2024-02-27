@@ -179,6 +179,8 @@ $(document).ready(function () {
   //table menu action start
   $(".action-wrapper .action").click(function (e) {
     e.stopPropagation();
+    $(".action-wrapper").find(".menu-option").removeClass("show")
+
     if (
       $(this).closest(".action-wrapper").find(".menu-option").hasClass("show")
     ) {
@@ -245,6 +247,7 @@ $(document).ready(function () {
   // table select start
   
   $(".select-styled").on("click", function () {
+    $(".custom-select").find(".custom-options").hide();
     $(this).closest(".custom-select").find(".custom-options").toggle();
   });
 
