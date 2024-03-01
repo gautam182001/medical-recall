@@ -247,7 +247,7 @@
   .payment-detail-inner input{padding: 14px 0;}
   .add-Patient {display: none;}
   .dashboard-outer{padding: 20px 15px;}
-  .add-btn-wrapper {display: block;position: absolute;left: 0;right: 0;text-align: center;bottom: -10px;z-index: 1;}
+  .add-btn-wrapper {display: block;position: absolute;left: 0;right: 0;text-align: center;bottom: 70px;z-index: 1;}
   .add-btn-wrapper .add-Patient{display: inline-flex;}
   .dashborad-page .header .container{padding: 0 15px;}
   .back a{font-size: 18px;padding-left: 25px;}
@@ -335,6 +335,8 @@
 
   .cms-page p{font-size: 14px;}
 .cms-page li{font-size: 14px}
+
+
 }
 @media (max-width:640px) {
 

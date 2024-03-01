@@ -2400,6 +2400,9 @@ a.red-text:hover {
   position: relative;
   z-index: 2;
 }
+.dataTables_wrapper .dataTables_info{
+  padding-top: 60px;
+}
 
 .dataTables_length {
   margin-bottom: 15px;
@@ -2864,6 +2867,14 @@ bottom: 46px;
   display: flex;
   flex: 1;
   justify-content: space-between;
+}
+.dashborad-page .header .dashboard-nav-wrap  .select-styled{
+  max-width: 155px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-height: 40px;
+ 
 }
 
 .dashborad-page .header .right-block {
