@@ -2552,7 +2552,9 @@ table.dataTable tbody tr:last-child .action-wrapper .menu-option,table.dataTable
  
   top: -290%;
 }
-
+table.dataTable tbody tr:first-child .action-wrapper .menu-option,table.dataTable tbody tr:nth-child(2) .action-wrapper .menu-option {
+  top: 110%;
+}
 .action-wrapper .menu-option.show {
   display: block;
   opacity: 1;
@@ -2641,12 +2643,17 @@ table.dataTable>thead>tr>th:last-child:before {
   background: var(--white);
   right: -16px;
   top: 46px;
-  z-index: 1;
+  z-index: 5;
 }
 table.dataTable tbody tr:last-child .custom-options,table.dataTable tbody tr:nth-last-child(2) .custom-options {
 top: auto;
 bottom: 46px;
 }
+table.dataTable tbody tr:first-child .custom-options,table.dataTable tbody tr:nth-child(2) .custom-options {
+
+  top: 46px;
+  bottom: auto;
+  }
 .custom-options div {
   padding: 8px 29px;
   cursor: pointer;
