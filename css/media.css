@@ -335,6 +335,10 @@
 
   .cms-page p{font-size: 14px;}
 .cms-page li{font-size: 14px}
+ 
+.dashboards-table .dataTables_wrapper .dataTables_info{
+  padding-top: 60px;
+}
 
 
 }

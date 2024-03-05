@@ -74,8 +74,8 @@ function dataTable() {
       left: 1,
     },
     language: {
-      searchPlaceholder: 'Search records'
-  }
+      searchPlaceholder: "Search records",
+    },
   });
 
   $(".billing-table-outer .dataTables_filter label").append("<span></span>");
@@ -177,27 +177,11 @@ $(document).ready(function () {
   });
 
   //table menu action start
+  $(".action-wrapper .menu-option").removeClass("show");
   $(".action-wrapper .action").click(function (e) {
     e.stopPropagation();
-    $(".action-wrapper").find(".menu-option").removeClass("show")
-
-    if (
-      $(this).closest(".action-wrapper").find(".menu-option").hasClass("show")
-    ) {
-      $(this)
-        .closest(".action-wrapper")
-        .find(".menu-option")
-        .removeClass("show");
-    } else {
-      $(this)
-        .closest(".action-wrapper")
-        .find(".menu-option")
-        .removeClass("show");
-      $(this).closest(".action-wrapper").find(".menu-option").addClass("show");
-    }
-  });
-  $(".action-wrapper .menu-option").on("click", function (e) {
-    e.stopPropagation();
+    $(this).closest(".action-wrapper").find(".menu-option").toggleClass("show");
+    $(".menu-option").not($(this).closest(".action-wrapper").find(".menu-option")).removeClass("show");
   });
   $(document).on("click", function (e) {
     e.stopPropagation();
@@ -244,8 +228,95 @@ $(document).ready(function () {
   });
   //Data Table End
 
-  // table select start
+  $(".custom-option").select2({
+    containerCssClass: "opened",
+    dropdownCssClass: "open-dropdown",
+    minimumResultsForSearch: Infinity,
+  });
+
+  $(".custom-option").on("select2:select", function (e) {
+    var data = $(this)
+      .closest(".custom-select.select-styled")
+      .find(".select2-selection__rendered")
+      .html();
+
+    if (data == "Completed") {
+      $(this)
+        .closest(".custom-select.select-styled")
+        .css("backgroundColor", "#51BF3F");
+    }
+    if (data == "Working on it") {
+      $(this)
+        .closest(".custom-select.select-styled")
+        .css("backgroundColor", "#F9813E");
+    }
+    if (data == "Not Started") {
+      $(this)
+        .closest(".custom-select.select-styled")
+        .css("backgroundColor", "#95A0A4");
+    }
+  });
+  $(".dataTables_wrapper ").on('draw.dt', function () {
+
+    $(".custom-option").select2({
+      containerCssClass: "opened",
+      dropdownCssClass: "open-dropdown",
+      minimumResultsForSearch: Infinity,
+    });
+    $(".custom-option").on("select2:select", function (e) {
+      var data = $(this)
+        .closest(".custom-select.select-styled")
+        .find(".select2-selection__rendered")
+        .html();
   
+      if (data == "Completed") {
+        $(this)
+          .closest(".custom-select.select-styled")
+          .css("backgroundColor", "#51BF3F");
+      }
+      if (data == "Working on it") {
+        $(this)
+          .closest(".custom-select.select-styled")
+          .css("backgroundColor", "#F9813E");
+      }
+      if (data == "Not Started") {
+        $(this)
+          .closest(".custom-select.select-styled")
+          .css("backgroundColor", "#95A0A4");
+      }
+    });
+});
+  $(".paginate_button").click(function () {
+    $(".custom-option").select2({
+      containerCssClass: "opened",
+      dropdownCssClass: "open-dropdown",
+      minimumResultsForSearch: Infinity,
+    });
+    $(".custom-option").on("select2:select", function (e) {
+      var data = $(this)
+        .closest(".custom-select.select-styled")
+        .find(".select2-selection__rendered")
+        .html();
+  
+      if (data == "Completed") {
+        $(this)
+          .closest(".custom-select.select-styled")
+          .css("backgroundColor", "#51BF3F");
+      }
+      if (data == "Working on it") {
+        $(this)
+          .closest(".custom-select.select-styled")
+          .css("backgroundColor", "#F9813E");
+      }
+      if (data == "Not Started") {
+        $(this)
+          .closest(".custom-select.select-styled")
+          .css("backgroundColor", "#95A0A4");
+      }
+    });
+  });
+  // table select start
+
   $(".select-styled").on("click", function () {
     $(".custom-select").find(".custom-options").hide();
     $(this).closest(".custom-select").find(".custom-options").toggle();
@@ -274,11 +345,11 @@ $(document).ready(function () {
       $(".custom-options").hide();
     }
   });
-  $(".paginate_button").on("click",function(){
+  $(".paginate_button").on("click", function () {
     $(".select-styled").on("click", function () {
       $(this).closest(".custom-select").find(".custom-options").toggle();
     });
-  
+
     $(".custom-options div").on("click", function () {
       var selectedValue = $(this).attr("data-value");
       $(this)
@@ -296,13 +367,13 @@ $(document).ready(function () {
         .text($(this).text());
       $(".custom-options").hide();
     });
-  
+
     $(document).on("click", function (event) {
       if (!$(event.target).closest(".custom-select").length) {
         $(".custom-options").hide();
       }
     });
-  })
+  });
 
   // table select End
 
