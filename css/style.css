@@ -2532,41 +2532,45 @@ table.dataTable tbody tr {
   display: inline-block;
 }
 
-.action-wrapper .menu-option {
+ .menu-option {
   display: none;
   position: absolute;
-  right: -8px;
-  top: 110%;
+  left: auto;
+  right: auto;
+  top: 36px;
   background-color: var(--white);
   min-width: 120px;
   border: 1px solid var(--dark-gray8);
-  z-index: 2;
+  z-index: 1056;
   padding: 10px 0;
   text-align: left;
   border-radius: 8px;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.3s opacity;
 }
-table.dataTable tbody tr:last-child .action-wrapper .menu-option,table.dataTable tbody tr:nth-last-child(2) .action-wrapper .menu-option {
+
+/* table.dataTable tbody tr:last-child .action-wrapper .menu-option,table.dataTable tbody tr:nth-last-child(2) .action-wrapper .menu-option {
  
   top: -290%;
-}
-table.dataTable tbody tr:first-child .action-wrapper .menu-option {
+} */
+/* table.dataTable tbody tr:first-child .action-wrapper .menu-option {
   top: 110%;
-}
-.action-wrapper .menu-option.show {
+} */
+/* table.dataTable tbody tr:last-child .action-wrapper .menu-option {
+  top: -290%;
+} */
+ .menu-option.show {
   display: block;
   opacity: 1;
 }
 
-.action-wrapper .menu-option a {
+ .menu-option a {
   display: block;
   color: var(--black1);
   padding: 10px 20px;
   white-space: nowrap;
 }
-
-.action-wrapper .menu-option a:hover {
+ .menu-option a:hover {
   background: var(--dark-gray6);
 }
 
@@ -3165,9 +3169,12 @@ table.dataTable tbody tr:first-child .custom-options,table.dataTable tbody tr:nt
 
 .tab-outer .nav-tabs {
   border: 0;
-  margin: 0 0 30px;
+  margin: 0 0 15px;
+  max-width: calc(100% - 200px);
 }
-
+.tab-outer .nav-tabs .nav-item{
+  margin-bottom: 16px;
+}
 .tab-outer .nav-tabs .nav-item:not(:last-child) {
   margin-right: 16px;
 }
@@ -4568,3 +4575,13 @@ border: 0;
 .select2-container--default .open-dropdown .select2-results__option--highlighted{
   color: #ffffff !important;
 }
+
+/* .dataTables_wrapper.no-footer .dataTables_scrollBody{
+  overflow: visible !important;
+}
+.dataTables_wrapper.no-footer .dataTables_scroll{
+  overflow: scroll;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollHead{
+  overflow: visible !important;
+} */

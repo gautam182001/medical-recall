@@ -63,6 +63,10 @@
   .clinic-wrapper .clinic-inner .clinic-profile{width: 54px;min-width: 54px;height: 54px;margin-right: 15px;}
   .dashboard-detail .currunt-month .total-price {font-size: 22px;line-height: 24px;} 
   .dashboard-detail .currunt-month{flex: 0 0 150px;max-width: 150px;margin-right: 20px;}
+
+  .clinic-outer .btn-outer{
+    top: -125px;
+  }
 }
   
 @media (max-width:1024px) {
