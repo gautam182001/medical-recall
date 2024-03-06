@@ -2510,7 +2510,7 @@ table.dataTable tbody tr {
   background-color: var(--white);
 }
 
-.action-wrapper .action {
+.action-wrapper .action,.dropdown-append {
   width: 34px;
   height: 34px;
   border: 1px solid var(--light-gray2);
@@ -2523,6 +2523,10 @@ table.dataTable tbody tr {
 }
 
 .action-wrapper .action i {
+  max-width: 20px;
+  display: inline-block;
+}
+.action-wrapper .dropdown-append i {
   max-width: 20px;
   display: inline-block;
 }
@@ -2548,7 +2552,21 @@ table.dataTable tbody tr {
   /* opacity: 0; */
   transition: 0.3s opacity;
 }
-
+.action-wrapper .menu-option {
+  display: none;
+  position: absolute;
+  right: -8px;
+  top: 110%;
+  background-color: var(--white);
+  min-width: 120px;
+  border: 1px solid var(--dark-gray8);
+  z-index: 1;
+  padding: 10px 0;
+  text-align: left;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
 /* table.dataTable tbody tr:last-child .action-wrapper .menu-option,table.dataTable tbody tr:nth-last-child(2) .action-wrapper .menu-option {
  
   top: -290%;
