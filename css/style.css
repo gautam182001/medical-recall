@@ -805,7 +805,20 @@ a.red-text:hover {
   color: var(--dark-red);
   text-align: start;
 }
+.form-field.date-icon{
+position: relative;
+}
+.form-field.date-icon i{
+  position: absolute;
+  right: 0;
+  top: 12px;
+  cursor: pointer;
+}
 
+.form-field.date-icon i img{
+  height: 23px;
+  width: 23px;
+}
 .form-field .password-block .view-pwd {
   position: absolute;
   right: 0;
@@ -3286,7 +3299,20 @@ table.dataTable tbody tr:first-child .custom-options,table.dataTable tbody tr:nt
   background: var(--white);
   border-radius: 10px;
 }
+.box .email-edit-blog{
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+}
+.box .email-edit-blog:last-child{
+  border: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
+.box .click-heading{
+  margin-bottom: 20px;
+}
 .box h4,
 .billing-table-outer h4 {
   font-size: 22px;
@@ -4449,6 +4475,17 @@ table.dataTable tbody tr:first-child .custom-options,table.dataTable tbody tr:nt
   align-items: center;
   justify-content: center;
 }
+.loder.table-loder{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .loder img {
   height: 100px;
@@ -4594,12 +4631,18 @@ border: 0;
   color: #ffffff !important;
 }
 
-/* .dataTables_wrapper.no-footer .dataTables_scrollBody{
-  overflow: visible !important;
+.add-patient-block.show~.search-modal  {
+  filter: blur(8px);
+} 
+.modal.show~.wrapper {
+  filter: blur(8px) !important;
+
 }
-.dataTables_wrapper.no-footer .dataTables_scroll{
-  overflow: scroll;
-}
-.dataTables_wrapper.no-footer .dataTables_scrollHead{
-  overflow: visible !important;
-} */
+.modal.show~.wrapper {
+  filter: blur(8px) !important;
+
+} 
+.modal-open1 .wrapper {
+  filter: blur(8px) !important;
+
+} 

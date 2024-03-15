@@ -1,49 +1,53 @@
+function dropdown() {
+  $(".action-wrapper .dropdown-append").click(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    var mouseX;
+    var mouseY;
+    mouseX = e.pageX - 100;
+    mouseY = e.pageY + 12;
 
-function dropdown(){
-    $(".action-wrapper .dropdown-append").click(function (e) {
-      
-      e.stopPropagation();
-      e.preventDefault();
-      var mouseX;
-      var mouseY;
-      mouseX = e.pageX - 100;
-      mouseY = e.pageY + 12;
+    $(this)
+      .parent(".action-wrapper")
+      .closest("tr")
+      .siblings()
+      .find(".action-wrapper .dropdown-append")
+      .removeClass("active");
+    $(this).toggleClass("active");
 
-      $(this).parent('.action-wrapper').closest('tr').siblings().find(".action-wrapper .dropdown-append").removeClass("active");
-      $(this).toggleClass('active');
+    if ($(this).hasClass("active")) {
+      $(".append-menu")
+        .css({ position: "absolute", top: mouseY, left: mouseX })
+        .appendTo("body");
+      $(".append-menu").addClass("show");
+    } else {
+      $(".append-menu").removeClass("show");
+    }
+  });
 
+  $(document).on("click", function (e) {
+    e.stopPropagation();
+    $(".filter-wrapper .filter-blog").removeClass("filter-show");
+    $(" .append-menu").removeClass("show");
+    $(" .menu-option ").removeClass("show");
 
-      if($(this).hasClass('active')){        
-        $(".append-menu")
-          .css({ position: "absolute", top: mouseY, left: mouseX })
-          .appendTo("body");
-        $(".append-menu").addClass("show");
-      }else {
-         $(".append-menu").removeClass("show");
-      }
+    if (
+      !$(e.target).closest(".append-menu ,.action-wrapper .dropdown-append")
+        .length
+    ) {
+      $(".action-wrapper .dropdown-append").removeClass("active");
+      $(".append-menu").removeClass("show");
+    }
+  });
 
-    });
-      
-    $(document).on("click", function (e) {
-      e.stopPropagation();
-      $(".filter-wrapper .filter-blog").removeClass("filter-show");
-      $(" .append-menu").removeClass("show");
-      $(" .menu-option ").removeClass("show");
-
-      if (!$(e.target).closest(".append-menu ,.action-wrapper .dropdown-append").length) {
-        $(".action-wrapper .dropdown-append").removeClass('active');
-        $(".append-menu").removeClass("show");
-      }	
-    });
-
-    $(".action-wrapper .action").click(function (e) {
-      e.stopPropagation();
-      $(".menu-option").not($(this).closest(".action-wrapper").find(".menu-option")).removeClass("show");
-      $(this).closest(".action-wrapper").find(".menu-option").toggleClass("show");
-    });
-  
+  $(".action-wrapper .action").click(function (e) {
+    e.stopPropagation();
+    $(".menu-option")
+      .not($(this).closest(".action-wrapper").find(".menu-option"))
+      .removeClass("show");
+    $(this).closest(".action-wrapper").find(".menu-option").toggleClass("show");
+  });
 }
-
 
 function footerAdj() {
   var footer_height = $(".footer").outerHeight();
@@ -223,7 +227,6 @@ $(document).ready(function () {
       },
     ],
   });
-
 
   //Filter
   $(".filter").click(function (e) {
@@ -423,9 +426,71 @@ $(document).ready(function () {
     $("#clinic").modal("show");
     setTimeout(function () {
       $("body").addClass("modal-open");
-    }, 50);
+    }, 500);
     $("body").addClass("modal-open");
   });
+
+
+
+  $(".add-btn").on("click", function () {
+    $(".search-modal ").css("filter", "blur(0)");
+    $(".search-modal").css("display", "block");
+    $("body").addClass("modal-open");
+    setInterval(function () {
+      $(".search-modal ").css("filter", "blur(0)");
+      $(".search-modal").css("display", "block");
+      $("body").addClass("modal-open");
+    }, 500);
+  });
+  $(".edit").on("click", function () {
+    $(".search-modal").modal("show");
+    $(".search-modal").addClass("show");
+    $(".search-modal").css("display", "block");
+    $(".add-patient-block ").css("display", "block");
+    // $(".search-modal ").css("filter", "blur(8px)");
+    $(".add-patient-block ").css("z-index", "1056");
+    setTimeout(function () {
+      $(".search-modal").addClass("show");
+      $(".search-modal").css("display", "block");
+      $(".add-patient-block ").css("display", "block");
+      // $(".search-modal ").css("z-index", "99");
+      $(".add-patient-block ").css("z-index", "1056");
+      // $(".search-modal ").css("filter", "blur(8px)");
+      $("body").addClass("modal-open");
+    }, 600);
+    setTimeout(function(){
+      // $(".search-modal ").css("filter", "blur(8px)");
+
+    }, 800 )
+    $("body").addClass("modal-open");
+  });
+
+  
+// $('[data-toggle=modal]').on('click', function(){
+//   var $btn = $(this);
+//   var currentDialog = $btn.closest('.modal-dialog'),
+//   targetDialog = $($btn.attr('data-target'));;
+//   if (!currentDialog.length)
+//     return;
+//   targetDialog.data('previous-dialog', currentDialog);
+//   currentDialog.addClass('aside');
+//   var stackedDialogCount = $('.modal.in .modal-dialog.aside').length;
+//   if (stackedDialogCount <= 5){
+//     currentDialog.addClass('aside-' + stackedDialogCount);
+//   }
+// });
+
+// $('.modal').on('hide.bs.modal', function(){
+//   var $dialog = $(this);  
+//   var previousDialog = $dialog.data('previous-dialog');
+//   if (previousDialog){
+//     previousDialog.removeClass('aside');
+//     $dialog.data('previous-dialog', undefined);
+//   }
+// });
+
+
+
 });
 $(window).resize(function () {
   footerAdj();
@@ -438,6 +503,17 @@ $(window).resize(function () {
 });
 $(window).on("load", function () {
   $("#welcome").modal("show");
+
+ 
+  // setTimeout(function () {
+  //   if($("body").find(".show")){
+  //     $("body").addClass("modal-open1")
+  //   }
+  //   else{
+  //     $("body").removeClass("modal-open1")
+
+  //   }
+  // }, 400);
 });
 
 

@@ -239,7 +239,7 @@
                                 </div>
                             </div>
                             <div class="search-blog">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#search">
+                                <button type="button"  data-bs-toggle="modal" data-bs-target="#search">
                                     <span>
                                         <img src="images/search.svg" alt="search">
                                     </span>
@@ -519,13 +519,14 @@
                             Add New Patient
                         </a>
                     </div>
-
-                    
+                    <div class="loder table-loder">
+                        <img src="./images/loader.svg" alt="loder">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade  add-patient-block" id="add-patient" tabindex="-1" aria-hidden="true">
+    <div class="modal fade  add-patient-block" id="add-patient" tabindex="-1" aria-hidden="true"  >
         <div class="modal-dialog  mid-modal modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-close">
@@ -573,7 +574,7 @@
                         </div>
                     </div>
                     <div class="btn-wrap bg-btn">
-                        <a href="#" title="Add Patient" class="btn primary-btn" data-bs-toggle="modal"
+                        <a href="#" title="Add Patient" class="btn primary-btn add-btn" data-bs-toggle="modal"
                             data-bs-target="#submit">
                             <span class="text">
                                 Add Patient
@@ -721,7 +722,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Albert Flores</td>
+                                    <td>Albert Floress</td>
                                     <td>16 July 1998</td>
                                     <td>X-Ray</td>
                                     <td>16 Sept 2023</td>
@@ -743,7 +744,7 @@
                                                 </i>
                                             </Button>
                                             <div class="menu-option">
-                                                <a href="#" title="Edit">Edit</a>
+                                                <a href="#" title="Edit" class="edit"  data-bs-toggle="modal" data-bs-target="#add-patient" >Edit</a>
                                                 <a href="#" title="Delete">Delete</a>
                                             </div>
                                         </div>
@@ -976,9 +977,7 @@
             </div>
         </div>
     </div>
-    <div class="loder">
-        <img src="./images/loader.svg" alt="loder">
-    </div>
+ 
 
     <div class="toast-message" style="display: none;">
         <div class="toast-content">
