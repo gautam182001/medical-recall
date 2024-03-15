@@ -430,54 +430,11 @@ $(document).ready(function () {
     $("body").addClass("modal-open");
   });
 
-  // $(".add-btn").on("click", function () {
-  //   $(".search-modal ").css("filter", "blur(0)");
-  //   $(".search-modal").css("display", "block");
-  //   $("body").addClass("modal-open");
-  //   setInterval(function () {
-  //     $(".search-modal ").css("filter", "blur(0)");
-  //     $(".search-modal").css("display", "block");
-  //     $("body").addClass("modal-open");
-  //   }, 500);
-  // });
-  // $(".edit").on("click", function () {
-  //   $(".search-modal").modal("show");
-  //   $(".search-modal").addClass("show");
-  //   $(".search-modal").css("display", "block");
-  //   $(".add-patient-block ").css("display", "block");
-  //   // $(".search-modal ").css("filter", "blur(8px)");
-  //   $(".add-patient-block ").css("z-index", "1056");
-  //   setTimeout(function () {
-  //     $(".search-modal").addClass("show");
-  //     $(".search-modal").css("display", "block");
-  //     $(".add-patient-block ").css("display", "block");
-  //     // $(".search-modal ").css("z-index", "99");
-  //     $(".add-patient-block ").css("z-index", "1056");
-  //     // $(".search-modal ").css("filter", "blur(8px)");
-  //     $("body").addClass("modal-open");
-  //   }, 600);
-  //   setTimeout(function () {
-  //     // $(".search-modal ").css("filter", "blur(8px)");
-  //   }, 800);
-  //   $("body").addClass("modal-open");
-  // });
-
-  // $("body").removeClass("modal-open1");
-  //     if ($(".modal").hasClass("show")) {
-  //       $("body").addClass("modal-open1");
-  //       alert("hi")
-  //     }
-  //     else{
-  //       $("body").removeClass("modal-open1");
-  //     }
-
       $('#add-patient').on('show.bs.modal', function () {
-        // e.stopPropagation();
         $('#search').modal('show');
       });
       $(".edit").click(function(){
         $('#add-patient').modal('show');
-        // $('body').addClass('modal-open');
       })
       
       $('#add-patient').on('hidden.bs.modal', function () {
@@ -499,28 +456,5 @@ $(window).resize(function () {
 });
 $(window).on("load", function () {
   $("#welcome").modal("show");
-
-
-    // $("body").removeClass("modal-open1");
-    // if ($(".modal").find(".show")) {
-    //   $("body").addClass("modal-open1");
-    // }
-    // else{
-    //   $("body").removeClass("modal-open1");
-    // }
  
 });
-
-
-// $(".modal").live("change", function () {
-
-
-//     $("body").removeClass("modal-open1");
-//     if ($(".modal").hasClass(".show")) {
-//       $("body").addClass("modal-open1");
-//       alert("hi")
-//     }
-//     else{
-//       $("body").removeClass("modal-open1");
-//     }
-// });
