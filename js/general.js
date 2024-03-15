@@ -504,16 +504,25 @@ $(window).resize(function () {
 $(window).on("load", function () {
   $("#welcome").modal("show");
 
- 
-  // setTimeout(function () {
-  //   if($("body").find(".show")){
-  //     $("body").addClass("modal-open1")
-  //   }
-  //   else{
-  //     $("body").removeClass("modal-open1")
-
-  //   }
-  // }, 400);
+  if($("body").find(".show")){
+    $("body").addClass("modal-open1")
+    console.log("if")
+  }
+  if($("body").not(find(".show"))){
+    $("body").removeClass("modal-open1")
+    console.log("else")
+  }
+  setTimeout(function () {
+    if($("body").find(".show")){
+      $("body").addClass("modal-open1")
+      console.log("if")
+    }
+    if($("body").not(find(".show"))){
+      $("body").removeClass("modal-open1")
+      console.log("else")
+    }
+    
+  }, 400);
 });
 
 

@@ -4487,6 +4487,24 @@ table.dataTable tbody tr:first-child .custom-options,table.dataTable tbody tr:nt
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.dataTables_processing~.dataTables_scroll {
+  position: relative;
+}
+.dataTables_processing~.dataTables_scroll::after {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: 100%;
+width: 100%;
+border-radius: 10px;
+background-color: rgba(0, 0, 0, 0.1);
+
+}
+div.dataTables_processing>div:last-child>div{
+  background-color: rgba(0, 0, 0, 0.4);
+}
 .loder img {
   height: 100px;
   width: 100px;
