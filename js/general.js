@@ -430,8 +430,6 @@ $(document).ready(function () {
     $("body").addClass("modal-open");
   });
 
-
-
   $(".add-btn").on("click", function () {
     $(".search-modal ").css("filter", "blur(0)");
     $(".search-modal").css("display", "block");
@@ -458,39 +456,34 @@ $(document).ready(function () {
       // $(".search-modal ").css("filter", "blur(8px)");
       $("body").addClass("modal-open");
     }, 600);
-    setTimeout(function(){
+    setTimeout(function () {
       // $(".search-modal ").css("filter", "blur(8px)");
-
-    }, 800 )
+    }, 800);
     $("body").addClass("modal-open");
   });
 
-  
-// $('[data-toggle=modal]').on('click', function(){
-//   var $btn = $(this);
-//   var currentDialog = $btn.closest('.modal-dialog'),
-//   targetDialog = $($btn.attr('data-target'));;
-//   if (!currentDialog.length)
-//     return;
-//   targetDialog.data('previous-dialog', currentDialog);
-//   currentDialog.addClass('aside');
-//   var stackedDialogCount = $('.modal.in .modal-dialog.aside').length;
-//   if (stackedDialogCount <= 5){
-//     currentDialog.addClass('aside-' + stackedDialogCount);
-//   }
-// });
+  // $('[data-toggle=modal]').on('click', function(){
+  //   var $btn = $(this);
+  //   var currentDialog = $btn.closest('.modal-dialog'),
+  //   targetDialog = $($btn.attr('data-target'));;
+  //   if (!currentDialog.length)
+  //     return;
+  //   targetDialog.data('previous-dialog', currentDialog);
+  //   currentDialog.addClass('aside');
+  //   var stackedDialogCount = $('.modal.in .modal-dialog.aside').length;
+  //   if (stackedDialogCount <= 5){
+  //     currentDialog.addClass('aside-' + stackedDialogCount);
+  //   }
+  // });
 
-// $('.modal').on('hide.bs.modal', function(){
-//   var $dialog = $(this);  
-//   var previousDialog = $dialog.data('previous-dialog');
-//   if (previousDialog){
-//     previousDialog.removeClass('aside');
-//     $dialog.data('previous-dialog', undefined);
-//   }
-// });
-
-
-
+  // $('.modal').on('hide.bs.modal', function(){
+  //   var $dialog = $(this);
+  //   var previousDialog = $dialog.data('previous-dialog');
+  //   if (previousDialog){
+  //     previousDialog.removeClass('aside');
+  //     $dialog.data('previous-dialog', undefined);
+  //   }
+  // });
 });
 $(window).resize(function () {
   footerAdj();
@@ -504,25 +497,16 @@ $(window).resize(function () {
 $(window).on("load", function () {
   $("#welcome").modal("show");
 
-  if($("body").find(".show")){
-    $("body").addClass("modal-open1")
-    console.log("if")
+  if ($("body").find(".show")) {
+    $("body").addClass("modal-open1");
+    console.log("if");
   }
-  if($("body").not(find(".show"))){
-    $("body").removeClass("modal-open1")
-    console.log("else")
-  }
+  $("body").removeClass("modal-open1");
   setTimeout(function () {
-    if($("body").find(".show")){
-      $("body").addClass("modal-open1")
-      console.log("if")
+    $("body").removeClass("modal-open1");
+    if ($("body").find(".show")) {
+      $("body").addClass("modal-open1");
+      console.log("if");
     }
-    if($("body").not(find(".show"))){
-      $("body").removeClass("modal-open1")
-      console.log("else")
-    }
-    
   }, 400);
 });
-
-

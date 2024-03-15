@@ -4492,6 +4492,7 @@ table.dataTable tbody tr:first-child .custom-options,table.dataTable tbody tr:nt
 }
 .dataTables_processing~.dataTables_scroll::after {
 position: absolute;
+content: "";
 top: 0;
 left: 0;
 right: 0;
@@ -4500,10 +4501,11 @@ height: 100%;
 width: 100%;
 border-radius: 10px;
 background-color: rgba(0, 0, 0, 0.1);
+z-index: 4;
 
 }
 div.dataTables_processing>div:last-child>div{
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #062638 !important;
 }
 .loder img {
   height: 100px;
