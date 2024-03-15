@@ -3757,37 +3757,6 @@ table.dataTable tbody tr:first-child .custom-options,table.dataTable tbody tr:nt
   padding-right: 0;
 }
 
-.modal-open .wrapper {
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px);
-}
-
-.modal.show~.wrapper {
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px);
-}
-
-.modal-open .footer {
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px);
-}
-
-.modal.show~.footer {
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px);
-}
 
 .modal-backdrop {
   background: rgba(8, 73, 100, 0.2);
@@ -4504,8 +4473,34 @@ background-color: rgba(0, 0, 0, 0.1);
 z-index: 4;
 
 }
+ 
+div.dataTables_processing{
+  position: absolute;
+  width: 200px;
+  margin: 0;
+  text-align: center;
+  padding: 2px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+border-radius:10px
+}
 div.dataTables_processing>div:last-child>div{
   background-color: #062638 !important;
+}
+div.dataTables_processing>div:last-child{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
 .loder img {
   height: 100px;
@@ -4651,18 +4646,14 @@ border: 0;
   color: #ffffff !important;
 }
 
-.add-patient-block.show~.search-modal  {
-  filter: blur(8px);
-} 
-.modal.show~.wrapper {
-  filter: blur(8px) !important;
 
+.modal#add-patient{
+  z-index: 1057;
 }
-.modal.show~.wrapper {
-  filter: blur(8px) !important;
-
-} 
-.modal-open1 .wrapper {
-  filter: blur(8px) !important;
-
-} 
+.modal-backdrop.show {
+  -webkit-filter: blur(18px);
+  -moz-filter: blur(18px);
+  -o-filter: blur(18px);
+  -ms-filter: blur(18px);
+  filter: blur(18px);
+}
