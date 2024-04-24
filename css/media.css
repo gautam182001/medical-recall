@@ -260,13 +260,36 @@
   .box {padding: 15px 15px 20px;}
   .box h4, .billing-table-outer h4 {font-size: 20px;line-height: 22px;}
   label,
-  .phone-change span {font-size: 16px;}
-  input{font-size: 16px;padding: 14px 0;}
+  .phone-change span {font-size: 14px;}
+  input{font-size: 14px;padding: 14px 0;}
   .profile-info input {padding: 14px 0;}
   .select2-container--default .select2-selection--single{font-size: 16px;padding: 10px 0;}
   .profile-info .form-field {margin-bottom: 20px;}
   .email-edit-blog .email-list li:not(:last-child) {margin: 0 0 10px;}
   .link{font-size: 14px;}
+  input::placeholder {
+    font-size: 16px;
+  }
+  .form-field .error-text{
+    font-size: 13px !important;
+  }
+  .authentication-page .forgot-password-block a{
+    font-size: 14px;
+  }
+  .authentication-page p{
+    font-size: 16px;
+  }
+  .radio-wrap input{
+    height: 20px;
+    width: 20px;
+  }
+  .custom-radio-wrap .custom-radio{
+    height: 20px;
+    width: 20px;
+  }
+  .custom-radio-wrap .custom-radio{
+    background-size: 12px;
+  }
   .plan-blog .btn-wrapper{margin-top: 15px;}
   .authentication-blog .switch{margin-top: 0;}
   .plan-blog p {font-size: 14px;line-height: 18px;margin: 0 0 7px;}
@@ -393,7 +416,7 @@
   .authentication-page .forgot-password-block  .radio-wrap{margin-bottom: 10px;}
   .authentication-page .forgot-password-block .form-field{margin-bottom:15px;}
   .authentication-page .authentication-wrapper{padding:20px;}
-  .authentication-page .heading-block p{font-size:18px!important;}
+  .authentication-page .heading-block p{font-size:16px!important;}
 
   .cancel-subscription-block .btn-wrap{flex-wrap:wrap;}
   .cancel-subscription-block .btn-wrap .btn{margin-bottom:15px;}
