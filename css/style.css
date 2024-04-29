@@ -79,6 +79,7 @@ table {
   --dark-blue: #072738;
   --dark-blue1: #062638;
   --dark-blue2: #3C91E6;
+  --dark-blue3: #D6EDFB;
   --dark-red: #ED1C24;
   --light-red: #E41B2C;
   --light-red1: #F22F2F;
@@ -1376,51 +1377,57 @@ a.red-text:hover {
 }
 
 .achievement-wrapper .achievement-row .left-col {
-  flex: 0 0 48%;
-  max-width: 48%;
+  flex: 0 0 42%;
+  max-width: 42%;
   padding-right: 23px;
   padding-bottom: 185px;
   position: relative;
 }
 
 .achievement-wrapper .achievement-row .right-col {
-  flex: 0 0 52%;
-  max-width: 52%;
-  margin-top: 4px;
+  flex: 0 0 58%;
+  max-width: 58%;
+  margin-top: 8px;
 }
 
 .achievement-wrapper .achievement-img {
   position: absolute;
-  bottom: -76px;
-  left: -50px;
-  width: 416px;
+  bottom: -73px;
+  left: 0;
+  width: 445px;
   z-index: -1;
 }
 
 .achievement-wrapper .achievement-about {
-  border-radius: 24px;
-  border: 1px solid var(--light-blue);
-  background: var(--white);
-  -o-box-shadow: 3px 15px 50px 0px var(--light-blue2);
-  -ms-box-shadow: 3px 15px 50px 0px var(--light-blue2);
-  -moz-box-shadow: 3px 15px 50px 0px var(--light-blue2);
-  -webkit-box-shadow: 3px 15px 50px 0px var(--light-blue2);
-  box-shadow: 3px 15px 50px 0px var(--light-blue2);
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  flex-direction: column;
 }
 
 .achievement-wrapper .achievement-li {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 33px 50px;
+  border-radius: 24px;
+  border: 1px solid var(--white);
+  background: var(--dark-blue3);
+  display: block;
+ flex: 0 0 100%;
+ max-width: 100%;
+  width: 460px;
+  padding: 24px 33px;
   border-bottom: 1px solid var(--dark-gray5);
+  margin-bottom: 25px;  box-shadow: 3px 15px 50px rgba(186, 225, 250, 0.3);
 }
 
-.achievement-wrapper .achievement-li:nth-child(odd) {
-  border-right: 1px solid var(--dark-gray5);
+.achievement-wrapper .achievement-li:last-child{
+  margin-bottom: 0;
 }
+.achievement-wrapper .achievement-li:nth-child(2){
+margin-left: 15%;
+}
+.achievement-wrapper .achievement-li:nth-child(3){
+  margin-left: 30%;
+}
+
 
 .achievement-wrapper .achievement-no {
   color: var(--dark-blue1);
