@@ -1380,7 +1380,7 @@ a.red-text:hover {
   flex: 0 0 42%;
   max-width: 42%;
   padding-right: 23px;
-  padding-bottom: 185px;
+  padding-bottom: 325px;
   position: relative;
 }
 
@@ -1389,7 +1389,22 @@ a.red-text:hover {
   max-width: 58%;
   margin-top: 8px;
 }
-
+.achievement-wrapper .achievement-row .left-col .achieve_list{
+  list-style: decimal;
+  list-style-position: inside;
+  font-size: 15px;
+}
+.achievement-wrapper .achievement-row .left-col .achieve_list ol{
+  margin-left: 25px;
+  list-style: "a. ";
+  list-style-position: inside;
+}
+.achievement-wrapper .achievement-row .left-col .achieve_list strong{
+  font-weight: 600;
+}
+.achievement-wrapper .achievement-row .left-col .achieve_list li{
+  margin-bottom: 7px;
+}
 .achievement-wrapper .achievement-img {
   position: absolute;
   bottom: -73px;
