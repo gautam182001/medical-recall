@@ -1391,7 +1391,7 @@ a.red-text:hover {
 }
 .achievement-wrapper .achievement-row .left-col .achieve_list{
   list-style: decimal;
-  list-style-position: inside;
+  padding-left: 15px;
   font-size: 15px;
 }
 .achievement-wrapper .achievement-row .left-col .achieve_list ol{
@@ -1404,6 +1404,9 @@ a.red-text:hover {
 }
 .achievement-wrapper .achievement-row .left-col .achieve_list li{
   margin-bottom: 7px;
+}
+.achievement-wrapper .achievement-row .left-col .achieve_list li::marker{
+  width: 15px;
 }
 .achievement-wrapper .achievement-img {
   position: absolute;
