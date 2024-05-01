@@ -398,7 +398,9 @@
   padding-top: 60px;
 }
 
-
+.achievement-wrapper .achievement-row .left-col .achieve_list{
+  align-items: center;
+}
 }
 @media (max-width:640px) {
 
