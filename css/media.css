@@ -6,9 +6,9 @@
   .filter-outer .right-blog{flex: 0 0 22%;max-width: 22%;}
 }
 @media (max-width:1280px) {
-  .footer .upper-footer .contact-wrap { max-width: none; flex: 1 }
+  /* .footer .upper-footer .contact-wrap { max-width: none; flex: 1 }
   .footer .upper-footer .list-wrap { max-width: none; flex: 1 }
-  .footer .upper-footer .logo-wrap { max-width: none; flex: 1 }
+  .footer .upper-footer .logo-wrap { max-width: none; flex: 1 } */
   .filter-wrapper .print,
   .filter-wrapper .filter {font-size: 18px;margin-right: 10px;}
   .dataTables_wrapper .dataTables_filter input{padding: 10px 10px 10px 40px;}
@@ -393,6 +393,19 @@
 
   .cms-page p{font-size: 14px;}
 .cms-page li{font-size: 14px}
+.footer .upper-footer .logo-wrap img{margin: 0 auto;}
+.footer .upper-footer .list-wrap{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.footer .upper-footer .list-wrap ul{
+  justify-content: space-between;
+}
+.footer .upper-footer .contact-wrap{
+  text-align: right;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
  
 .dashboards-table .dataTables_wrapper .dataTables_info{
   padding-top: 60px;
@@ -400,6 +413,9 @@
 
 .achievement-wrapper .achievement-row .left-col .achieve_list{
   align-items: center;
+}
+.footer .upper-footer{
+  padding: 30px 0;
 }
 }
 @media (max-width:640px) {
@@ -416,9 +432,8 @@
   .play-btn { padding: 12px; }
   .play-btn .play-icon { margin-right: 0; }
   .play-btn .play-txt { display: none; }
-  .footer .upper-footer .contact-wrap { max-width: 100%; flex: 0 0 100% } 
-  .footer .upper-footer .list-wrap { max-width: 100%; flex: 0 0 100%; margin: 0 0 20px }
-  .footer .upper-footer .list-wrap ul li:not(:last-child) { margin: 0 0 10px }
+
+
   .footer .upper-footer .list-wrap ul a { font-size: 14px }
   .footer .upper-footer .contact-wrap a { font-size: 16px }
   .footer .upper-footer h5 { margin: 0 0 15px }
@@ -500,6 +515,14 @@ max-width: 100%;
   .clinic-wrapper .clinic-inner .clinic-profile{margin-right: 10px;}
   .clinic-wrapper .clinic-inner .clinic-content h4, .clinic-wrapper .clinic-inner .clinic-profile span{font-size: 18px;}
   .clinic-wrapper .clinic-inner .clinic-content h4{width: 100%;}
+  .footer .upper-footer .list-wrap{
+    flex: 0 0 56%;
+    max-width: 56%;
+  }
+  .footer .upper-footer .contact-wrap{
+    flex: 0 0 44%;
+    max-width: 44%;
+  }
 }
 
 @media (max-width:374px) {
@@ -511,6 +534,17 @@ max-width: 100%;
   }
   .achievement-wrapper .achievement-li{
     padding: 10px;
+  }
+  .footer .upper-footer .list-wrap { max-width: 100%; flex: 0 0 100%; margin: 0 0 20px }
+  .footer .upper-footer .contact-wrap { max-width: 100%; flex: 0 0 100% } 
+  .footer .upper-footer .contact-wrap{
+    text-align: center;
+  }
+  .footer .upper-footer .list-wrap ul{
+    flex-direction: column;
+  }
+  .footer .upper-footer .list-wrap ul li:not(:last-child){
+    margin: 0 0 10px;
   }
 }
   

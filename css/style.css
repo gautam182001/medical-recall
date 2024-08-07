@@ -1352,7 +1352,7 @@ a.red-text:hover {
   background-color: var(--light-blue2);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0;
+  padding: 50px 0;
   margin: 50px 0 0;
 }
 
@@ -1598,6 +1598,7 @@ margin-left: 15%;
 .footer .upper-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding: 50px 0;
   margin: 0 -20px
@@ -1605,8 +1606,8 @@ margin-left: 15%;
 
 .footer .upper-footer .logo-wrap {
   padding: 0 20px;
-  max-width: 32%;
-  flex: 0 0 32%
+  max-width: 25%;
+  flex: 0 0 25%
 }
 
 .footer .upper-footer .logo-wrap img {
@@ -1619,13 +1620,14 @@ margin-left: 15%;
 
 .footer .upper-footer .list-wrap {
   padding: 0 20px;
-  max-width: 32%;
-  flex: 0 0 32%
+  max-width: 50%;
+  flex: 0 0 50%
+}
+.footer .upper-footer .list-wrap ul{
+  display: flex;
+  justify-content: space-around;
 }
 
-.footer .upper-footer .list-wrap ul li:not(:last-child) {
-  margin: 0 0 20px
-}
 
 .footer .upper-footer .list-wrap ul a {
   font-size: 16px;
@@ -1640,8 +1642,9 @@ margin-left: 15%;
 
 .footer .upper-footer .contact-wrap {
   padding: 0 20px;
-  max-width: 36%;
-  flex: 0 0 36%
+  max-width: 25%;
+  flex: 0 0 25%;
+  text-align: right;
 }
 
 .footer .upper-footer .contact-wrap li:not(:last-child) {
